@@ -1,25 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732275187
+::res://::1732277537
 default_env.tres::Environment::-1::1732275131::0::1::::<><>::
 icon.png::CompressedTexture2D::2425675078513085472::1732274146::1732275188::1::::<><>::
-::res://kenney_roguelike-indoors/::1732275161
+KinematicBody2D.gd::GDScript::-1::1732275678::0::1::::<>CharacterBody2D<>::
+::res://kenney_roguelike-indoors/::1732275189
 License.txt::TextFile::-1::1732275161::0::1::::<><>::
 Preview.png::CompressedTexture2D::332707450022811566::1732275161::1732275189::1::::<><>::
 Sample.png::CompressedTexture2D::8693903680975305284::1732275161::1732275189::1::::<><>::
-::res://kenney_roguelike-indoors/Tilesheets/::1732275161
+::res://kenney_roguelike-indoors/Tilesheets/::1732275189
 roguelikeIndoor_magenta.png::CompressedTexture2D::4726430813280466042::1732275161::1732275189::1::::<><>::
 roguelikeIndoor_transparent.png::CompressedTexture2D::1263465702875508241::1732275161::1732275189::1::::<><>::
 tilesheetInfo.txt::TextFile::-1::1732275161::0::1::::<><>::
-::res://kenney_tiny-dungeon/::1732275161
+::res://kenney_tiny-dungeon/::1732275188
 License.txt::TextFile::-1::1732275161::0::1::::<><>::
 Preview.png::CompressedTexture2D::7809470682713059648::1732275161::1732275188::1::::<><>::
 Sample.png::CompressedTexture2D::2737802243168626016::1732275161::1732275188::1::::<><>::
 Tilesheet.txt::TextFile::-1::1732275161::0::1::::<><>::
 ::res://kenney_tiny-dungeon/Tiled/::1732275161
-::res://kenney_tiny-dungeon/Tilemap/::1732275161
+::res://kenney_tiny-dungeon/Tilemap/::1732275189
 tilemap.png::CompressedTexture2D::8036038713781443590::1732275161::1732275189::1::::<><>::
 tilemap_packed.png::CompressedTexture2D::249176197118010301::1732275161::1732275189::1::::<><>::
-::res://kenney_tiny-dungeon/Tiles/::1732275161
+::res://kenney_tiny-dungeon/Tiles/::1732275189
 tile_0000.png::CompressedTexture2D::1540048821356250716::1732275161::1732275189::1::::<><>::
 tile_0001.png::CompressedTexture2D::939969000626907173::1732275161::1732275189::1::::<><>::
 tile_0002.png::CompressedTexture2D::222414005266772600::1732275161::1732275189::1::::<><>::
@@ -152,3 +153,47 @@ tile_0128.png::CompressedTexture2D::3967162536555892525::1732275161::1732275188:
 tile_0129.png::CompressedTexture2D::9158408376714069414::1732275161::1732275188::1::::<><>::
 tile_0130.png::CompressedTexture2D::821738408179931293::1732275161::1732275188::1::::<><>::
 tile_0131.png::CompressedTexture2D::7767768260091428773::1732275161::1732275188::1::::<><>::
+::res://sprites Character/::1732277511
+::res://sprites Character/characters/::1732277510
+player.png::CompressedTexture2D::9207389260596987945::1732277510::1732277546::1::::<><>::
+README.txt::TextFile::-1::1732277510::0::1::::<><>::
+skeleton.png::CompressedTexture2D::4601902939735816414::1732277510::1732277546::1::::<><>::
+skeleton_swordless.png::CompressedTexture2D::4056065322337242271::1732277510::1732277546::1::::<><>::
+slime.png::CompressedTexture2D::4089770916156819814::1732277511::1732277546::1::::<><>::
+::res://sprites Character/objects/::1732277511
+chest_01.png::CompressedTexture2D::7699249251347269412::1732277511::1732277546::1::::<><>::
+chest_02.png::CompressedTexture2D::3163908718658815352::1732277511::1732277546::1::::<><>::
+objects.png::CompressedTexture2D::1879938671242176071::1732277511::1732277546::1::::<><>::
+rock_in_water-sheet.png::CompressedTexture2D::4556935429683243857::1732277511::1732277546::1::::<><>::
+rock_in_water_01-sheet.png::CompressedTexture2D::6729215199215595448::1732277511::1732277546::1::::<><>::
+rock_in_water_01.png::CompressedTexture2D::2694630473528135718::1732277511::1732277546::1::::<><>::
+rock_in_water_02.png::CompressedTexture2D::9021254026633377106::1732277511::1732277546::1::::<><>::
+rock_in_water_03.png::CompressedTexture2D::1757685184288019262::1732277511::1732277546::1::::<><>::
+rock_in_water_04.png::CompressedTexture2D::4885092940627886267::1732277511::1732277546::1::::<><>::
+rock_in_water_05.png::CompressedTexture2D::6908524304815979554::1732277511::1732277546::1::::<><>::
+rock_in_water_06.png::CompressedTexture2D::4091255101683446424::1732277511::1732277546::1::::<><>::
+::res://sprites Character/particles/::1732277511
+dust_particles_01.png::CompressedTexture2D::7885532904358790397::1732277511::1732277546::1::::<><>::
+::res://sprites Character/tilesets/::1732277511
+decor_8x8.png::CompressedTexture2D::2923714331554314866::1732277511::1732277545::1::::<><>::
+decor_16x16.png::CompressedTexture2D::8286250753991652746::1732277511::1732277545::1::::<><>::
+fences.png::CompressedTexture2D::588068681195561199::1732277511::1732277545::1::::<><>::
+grass.png::CompressedTexture2D::5857967122270119124::1732277511::1732277545::1::::<><>::
+plains.png::CompressedTexture2D::2089093103968636318::1732277511::1732277545::1::::<><>::
+water1.png::CompressedTexture2D::8686945296390599871::1732277511::1732277545::1::::<><>::
+water2.png::CompressedTexture2D::4283596812910303513::1732277511::1732277545::1::::<><>::
+water3.png::CompressedTexture2D::1090041597742441146::1732277511::1732277545::1::::<><>::
+water4.png::CompressedTexture2D::2485364859879428680::1732277511::1732277545::1::::<><>::
+water5.png::CompressedTexture2D::7836072993616342030::1732277511::1732277545::1::::<><>::
+water6.png::CompressedTexture2D::7707997035335518469::1732277511::1732277545::1::::<><>::
+water-sheet.png::CompressedTexture2D::3428490154030865076::1732277511::1732277545::1::::<><>::
+water_decorations.png::CompressedTexture2D::4327794930806183667::1732277511::1732277546::1::::<><>::
+water_lillies.png::CompressedTexture2D::1931068086428696674::1732277511::1732277546::1::::<><>::
+::res://sprites Character/tilesets/floors/::1732277511
+carpet.png::CompressedTexture2D::2965459937187213578::1732277511::1732277546::1::::<><>::
+flooring.png::CompressedTexture2D::9186503175553804068::1732277511::1732277546::1::::<><>::
+wooden.png::CompressedTexture2D::400241204223419381::1732277511::1732277545::1::::<><>::
+::res://sprites Character/tilesets/walls/::1732277511
+walls.png::CompressedTexture2D::8683487616398054506::1732277511::1732277545::1::::<><>::
+wooden_door.png::CompressedTexture2D::3839805047893050101::1732277511::1732277545::1::::<><>::
+wooden_door_b.png::CompressedTexture2D::6820714401872726223::1732277511::1732277545::1::::<><>::
