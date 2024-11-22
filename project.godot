@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Geschichte Spiel"
+config/name="Uncencered Library"
 config/icon="res://icon.png"
 
 [gui]
