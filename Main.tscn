@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://v5f8edm127t1"]
+[gd_scene load_steps=44 format=3 uid="uid://v5f8edm127t1"]
 
 [ext_resource type="Script" path="res://KinematicBody2D.gd" id="1_wplxc"]
 [ext_resource type="Texture2D" uid="uid://d4gemdorra1ej" path="res://sprites Character/characters/player.png" id="2_ultfj"]
@@ -153,6 +153,10 @@ region = Rect2(192, 240, 48, 48)
 atlas = ExtResource("2_ultfj")
 region = Rect2(240, 240, 48, 48)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pag2"]
+atlas = ExtResource("2_ultfj")
+region = Rect2(0, 0, 48, 48)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_54xv2"]
 animations = [{
 "frames": [{
@@ -293,11 +297,18 @@ animations = [{
 "name": &"Walk Up",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pag2")
+}],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_560bi"]
+radius = 7.0
+height = 22.0
 
 [node name="Node2D" type="Node2D"]
 
@@ -312,4 +323,7 @@ script = ExtResource("1_wplxc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_54xv2")
-animation = &"Walk Up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_560bi")
