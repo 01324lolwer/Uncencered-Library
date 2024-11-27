@@ -1,3 +1,7 @@
 res://default_env.tres
 res://Main.tscn
 res://KinematicBody2D.gd
+res://player.gd
+res://world.tscn
+res://scenes/world.tscn
+res://scenes/Main.tscn
