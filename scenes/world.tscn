@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://rq2ll51226f4"]
+[gd_scene load_steps=3 format=3 uid="uid://rq2ll51226f4"]
 
 [ext_resource type="PackedScene" uid="uid://c56xjw6wa7m8t" path="res://scenes/Main.tscn" id="1_cbifo"]
+
+[sub_resource type="TileSet" id="TileSet_o3w1l"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_cbifo")]
 position = Vector2(103, 39)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_o3w1l")
+format = 2
