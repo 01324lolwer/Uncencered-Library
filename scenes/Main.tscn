@@ -288,20 +288,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gxsge"]
-radius = 8.0
-height = 24.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_6txuu"]
+radius = 4.0
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_mmrtv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -15)
 sprite_frames = SubResource("SpriteFrames_s8puh")
-animation = &"walk_up"
-frame_progress = 0.0464058
+animation = &"idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 8)
-shape = SubResource("CapsuleShape2D_gxsge")
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_6txuu")
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://t0sxa05fnou8"]
+
+[ext_resource type="Texture2D" uid="uid://davslx2t6vnof" path="res://kenney_tiny-dungeon/Tiles/tile_0098.png" id="1_pkys2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ro68f"]
+size = Vector2(51, 18)
+
+[node name="NPC1" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_ro68f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pkys2")
+flip_h = true

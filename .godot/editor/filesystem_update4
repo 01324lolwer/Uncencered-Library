@@ -1,3 +1,4 @@
 res://default_env.tres
 res://scenes/world.tscn
+res://scenes/npc_1.tscn
 res://scenes/Main.tscn
