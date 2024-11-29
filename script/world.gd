@@ -12,9 +12,9 @@ func _process(delta):
 
 #Haus 1 ist 1x grau dach
 func _on_transition_haus_1_body_entered(body):
-	if  Input.is_action_pressed("ui_accept"):
+	if  Input.is_action_just_pressed("ui_accept"):
 		get_tree().change_scene_to_file("res://scenes/building1.tscn")
-	elif Input.is_action_pressed("ui_accept"): 
+	elif Input.is_action_just_pressed("ui_accept"): 
 		get_tree().change_scene_to_file("res://scenes/building1.tscn")
 
 func _on_transition_haus_1_body_exited(body):
