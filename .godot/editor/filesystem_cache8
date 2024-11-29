@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732893484
-default_env.tres::Environment::4870137657657007193::1732828704::0::1::::<><>::
+::res://::1732913892
+default_env.tres::Environment::4870137657657007193::1732914984::0::1::::<><>::
 icon.png::CompressedTexture2D::2425675078513085472::1732274342::1732275300::1::::<><>::
 ::res://kenney_roguelike-indoors/::1732275300
 License.txt::TextFile::-1::1732274488::0::1::::<><>::
@@ -152,12 +152,15 @@ tile_0128.png::CompressedTexture2D::3967162536555892525::1732274478::1732275300:
 tile_0129.png::CompressedTexture2D::9158408376714069414::1732274478::1732275300::1::::<><>::
 tile_0130.png::CompressedTexture2D::821738408179931293::1732274478::1732275300::1::::<><>::
 tile_0131.png::CompressedTexture2D::7767768260091428773::1732274478::1732275300::1::::<><>::
-::res://scenes/::1732828704
-Main.tscn::PackedScene::6943916154285291557::1732828614::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
-npc_1.tscn::PackedScene::1386331492094101305::1732828614::0::1::::<><>::uid://davslx2t6vnof::::res://kenney_tiny-dungeon/Tiles/tile_0098.png
-world.tscn::PackedScene::1227900013768638731::1732828704::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn
-::res://script/::1732736760
-player.gd::GDScript::-1::1732736629::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1732913892
+building1.tscn::PackedScene::215045211717058150::1732914984::0::1::::<><>::res://scenes/building1.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png
+Main.tscn::PackedScene::6943916154285291557::1732913627::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
+npc_1.tscn::PackedScene::1386331492094101305::1732913627::0::1::::<><>::uid://davslx2t6vnof::::res://kenney_tiny-dungeon/Tiles/tile_0098.png
+building1.gd::GDScript::-1::1732913624::0::1::::<>Node2D<>::
+world.tscn::PackedScene::1227900013768638731::1732914473::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn
+::res://script/::1732913625
+player.gd::GDScript::-1::1732896618::0::1::::<>CharacterBody2D<>::
+world.gd::GDScript::-1::1732913624::0::1::::<>Node2D<>::
 ::res://sprites Character/::1732282090
 ::res://sprites Character/characters/::1732282090
 player.png::CompressedTexture2D::9207389260596987945::1732282090::1732282090::1::::<><>::
