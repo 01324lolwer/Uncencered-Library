@@ -17,11 +17,13 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://script/Global.gd"
+Global="*res://script/global.gd"
 
 [display]
 
-window/stretch/scale=4.0
+window/size/viewport_width=638
+window/size/viewport_height=360
+window/stretch/scale=5.0
 
 [gui]
 

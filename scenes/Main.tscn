@@ -291,7 +291,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_6txuu"]
 radius = 4.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 y_sort_enabled = true
 script = ExtResource("1_mmrtv")
 

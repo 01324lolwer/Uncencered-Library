@@ -1,10 +1,8 @@
 extends Node2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	add_to_group("World")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -12,10 +10,11 @@ func _process(delta):
 
 #Haus 1 ist 1x grau dach
 func _on_transition_haus_1_body_entered(body):
+	Global.save_player_position(Global.player)
 	if  Input.is_action_just_pressed("ui_accept"):
-		get_tree().change_scene_to_file("res://scenes/building1.tscn")
+		pass
 	elif Input.is_action_just_pressed("ui_accept"): 
-		get_tree().change_scene_to_file("res://scenes/building1.tscn")
+		pass
 
 func _on_transition_haus_1_body_exited(body):
 	pass

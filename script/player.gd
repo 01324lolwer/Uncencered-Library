@@ -8,6 +8,7 @@ func player():
 	
 func _ready():
 	$AnimatedSprite2D.play("idle_front")
+	add_to_group("Player")
 
 func _physics_process(delta):
 	player_movement(delta)

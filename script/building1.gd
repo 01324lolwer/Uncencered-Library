@@ -1,10 +1,10 @@
 extends Node2D
 
- @onready var $Area2D.visible = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	add_to_group("World")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,4 +18,4 @@ func _on_area_2d_body_entered(body):
 		
 
 func _on_area_2d_body_exited(body):
-	$Area2D.visible = true
+	pass

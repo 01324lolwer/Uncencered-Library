@@ -403,7 +403,7 @@ size = Vector2(10, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ngc2m"]
 size = Vector2(10, 7)
 
-[node name="World" type="Node2D"]
+[node name="World" type="Node2D" groups=["World"]]
 script = ExtResource("1_lv20b")
 
 [node name="World Texture" type="TileMap" parent="."]
@@ -419,7 +419,7 @@ layer_2/tile_data = PackedInt32Array(-524320, 196609, 5, -458784, 196609, 6, -39
 
 [node name="Player" parent="." instance=ExtResource("1_cbifo")]
 top_level = true
-position = Vector2(83, 258)
+position = Vector2(64, 292)
 
 [node name="NPC1" parent="." instance=ExtResource("3_nnkjw")]
 position = Vector2(64, -184)
