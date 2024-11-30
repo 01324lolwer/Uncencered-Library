@@ -1,14 +1,9 @@
 res://default_env.tres
 res://scenes/world.tscn
-res://building1.gd
-res://script/world.gd
-res://scenes/building1.tscn
-res://script/player.gd
 res://scenes/Main.tscn
 res://scenes/npc_1.tscn
-res://script/global.gd
-res://Mainworld.gd
-res://mainworld.tscn
+res://scenes/building1.tscn
 res://scenes/mainworld.tscn
+res://script/global.gd
+res://script/world.gd
 res://script/mainworld.gd
-res://script/building1.gd

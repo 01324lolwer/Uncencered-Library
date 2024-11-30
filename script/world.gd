@@ -2,7 +2,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	add_to_group("World")
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -10,11 +10,14 @@ func _process(delta):
 
 #Haus 1 ist 1x grau dach
 func _on_transition_haus_1_body_entered(body):
-	Global.save_player_position(Global.player)
 	if  Input.is_action_just_pressed("ui_accept"):
-		pass
+		print("Enter Building...")
+		Global.switch_to_building1(Global.building1, $PLayer)
+		print("Entered")
 	elif Input.is_action_just_pressed("ui_accept"): 
-		pass
+		print("Enter Building...")
+		Global.switch_to_building1(Global.building1, $Player)
+		print("Entered")
 
 func _on_transition_haus_1_body_exited(body):
 	pass
