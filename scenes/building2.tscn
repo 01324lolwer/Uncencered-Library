@@ -415,7 +415,7 @@ position = Vector2(174, 126)
 
 [node name="SceneTrigger" parent="." instance=ExtResource("3_i4ibi")]
 position = Vector2(172, 152)
-connected_scene = "World"
+connected_scene = "world"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(5, 7)

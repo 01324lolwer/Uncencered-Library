@@ -359,7 +359,7 @@ layer_2/tile_data = PackedInt32Array(327685, 1048577, 6, 327688, 1048577, 6, 393
 
 [node name="SceneTrigger" parent="." instance=ExtResource("3_0n70d")]
 position = Vector2(107, 153)
-connected_scene = "World"
+connected_scene = "world"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(5.5, 8.5)
