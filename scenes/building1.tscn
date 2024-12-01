@@ -186,6 +186,7 @@ size = Vector2(47, 19)
 script = ExtResource("1_psysm")
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(64, 0)
 rotation = -0.00276876
 tile_set = SubResource("TileSet_2y7y3")
 format = 2
@@ -197,11 +198,13 @@ layer_2/name = "ysort"
 layer_2/tile_data = PackedInt32Array(458754, 327680, 7, 262146, 458752, 1610612744, 196614, 720896, 1342177290, 196615, 655360, 9, 196616, 655360, 1610612744, 196619, 655360, 6, 262155, 655360, 6)
 
 [node name="EntranceMarkers" type="Node2D" parent="."]
+position = Vector2(64, 0)
 
 [node name="any" type="Marker2D" parent="EntranceMarkers"]
 position = Vector2(111, 118)
 
 [node name="SceneTrigger" parent="." instance=ExtResource("3_7leh8")]
+position = Vector2(64, 0)
 connected_scene = "World"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
