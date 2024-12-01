@@ -1,7 +1,7 @@
-TileMap
 Marker2D
 CollisionShape2D
 Node2D
+TileMap
 Area2D
 Camera2D
 Node
