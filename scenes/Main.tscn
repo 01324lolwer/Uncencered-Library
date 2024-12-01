@@ -293,6 +293,7 @@ radius = 4.0
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 y_sort_enabled = true
+collision_layer = 3
 script = ExtResource("1_mmrtv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -303,13 +304,3 @@ animation = &"idle_front"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -1)
 shape = SubResource("CircleShape2D_6txuu")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -588
-limit_top = -416
-limit_right = 712
-limit_bottom = 422
-limit_smoothed = true
-position_smoothing_enabled = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true

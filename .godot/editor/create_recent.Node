@@ -1,8 +1,10 @@
-Node
-Camera2D
-TileMap
+Marker2D
 CollisionShape2D
+Node2D
 Area2D
+Camera2D
+Node
+TileMap
 Sprite2D
 CharacterBody2D
 AnimatedSprite2D
