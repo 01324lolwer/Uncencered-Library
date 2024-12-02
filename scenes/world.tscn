@@ -429,7 +429,7 @@ position = Vector2(472, 376)
 top_level = true
 z_index = 15
 y_sort_enabled = false
-position = Vector2(643, 467)
+position = Vector2(652, 692)
 
 [node name="follow_cam" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
 visible = false
@@ -444,7 +444,7 @@ script = ExtResource("4_kegwf")
 tilemap = NodePath("../World Texture")
 
 [node name="NPC1" parent="." instance=ExtResource("3_nnkjw")]
-position = Vector2(654, 230)
+position = Vector2(656, 232)
 
 [node name="EntranceMarkers" type="Node2D" parent="."]
 
