@@ -1,8 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733135790
-default_env.tres::Environment::4870137657657007193::1733134629::0::1::::<><>::
+::res://::1733155276
+default_env.tres::Environment::4870137657657007193::1733155267::0::1::::<><>::
 follow_cam.gd::GDScript::-1::1733059259::0::1::::<>Camera2D<>::
 icon.png::CompressedTexture2D::2425675078513085472::1732274342::1732275300::1::::<><>::
+::res://fonts/::1733152092
+Minecraftia-Regular.ttf::FontFile::8468491585377865094::1733152089::1733152092::1::::<><>::
+::res://interaction/::1733153423
+InteractionManager.gd::GDScript::-1::1733153423::0::1::::<>Node2D<>::
+InteractionManager.tscn::PackedScene::1658574219102677228::1733152780::0::1::::<><>::res://interaction/InteractionManager.gd<>uid://dswg2363nilte::::res://fonts/Minecraftia-Regular.ttf
+::res://interaction/interaction_area/::1733153882
+interaction_area.gd::GDScript::-1::1733153423::0::1::::InteractionArea<>Area2D<>::
+interaction_area.tscn::PackedScene::7844737694828082917::1733153882::0::1::::<><>::res://interaction/interaction_area/interaction_area.gd
 ::res://kenney_roguelike-indoors/::1732275300
 License.txt::TextFile::-1::1732274488::0::1::::<><>::
 Preview.png::CompressedTexture2D::332707450022811566::1732274488::1732275300::1::::<><>::
@@ -12,7 +20,7 @@ roguelikeIndoor_magenta.png::CompressedTexture2D::4726430813280466042::173227448
 roguelikeIndoor_transparent.png::CompressedTexture2D::1263465702875508241::1732274487::1732275300::1::::<><>::
 tilesheetInfo.txt::TextFile::-1::1732274487::0::1::::<><>::
 WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg::CompressedTexture2D::8495610765149659797::1733133015::1733133021::1::::<><>::
-::res://kenney_tiny-dungeon/::1732275300
+::res://kenney_tiny-dungeon/::1733155276
 License.txt::TextFile::-1::1732274478::0::1::::<><>::
 Preview.png::CompressedTexture2D::7809470682713059648::1732274478::1732275300::1::::<><>::
 Sample.png::CompressedTexture2D::2737802243168626016::1732274478::1732275300::1::::<><>::
@@ -154,20 +162,22 @@ tile_0128.png::CompressedTexture2D::3967162536555892525::1732274478::1732275300:
 tile_0129.png::CompressedTexture2D::9158408376714069414::1732274478::1732275300::1::::<><>::
 tile_0130.png::CompressedTexture2D::821738408179931293::1732274478::1732275300::1::::<><>::
 tile_0131.png::CompressedTexture2D::7767768260091428773::1732274478::1732275300::1::::<><>::
-::res://scenes/::1733134629
-building1.tscn::PackedScene::215045211717058150::1733133611::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
-building2.tscn::PackedScene::7535198973789746612::1733133612::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
-building3.tscn::PackedScene::3488886815527326364::1733133613::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://dtblp6dle7olh::::res://kenney_roguelike-indoors/Tilesheets/WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg
-building4.tscn::PackedScene::4250837048098269345::1733134266::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
-building5.tscn::PackedScene::6488022350708184898::1733134623::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://dtblp6dle7olh::::res://kenney_roguelike-indoors/Tilesheets/WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg
-building6.tscn::PackedScene::729984380011394350::1733133614::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
-building7.tscn::PackedScene::7933941233667534584::1733133614::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
-Main.tscn::PackedScene::6943916154285291557::1733061585::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
+::res://scenes/::1733155163
+building1.tscn::PackedScene::215045211717058150::1733154358::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
+building2.tscn::PackedScene::7535198973789746612::1733154358::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
+building3.tscn::PackedScene::3488886815527326364::1733154359::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://dtblp6dle7olh::::res://kenney_roguelike-indoors/Tilesheets/WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg
+building4.tscn::PackedScene::4250837048098269345::1733154359::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
+building5.tscn::PackedScene::6488022350708184898::1733154360::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://dtblp6dle7olh::::res://kenney_roguelike-indoors/Tilesheets/WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg
+building6.tscn::PackedScene::729984380011394350::1733154361::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
+building7.tscn::PackedScene::7933941233667534584::1733154361::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
+chest.tscn::PackedScene::6587651166833454044::1733154361::0::1::::<><>::uid://bxsvt17yogooh::::res://kenney_tiny-dungeon/Tiles/tile_0063.png<>res://script/chest.gd<>uid://dj1bximjlhgjt::::res://interaction/interaction_area/interaction_area.tscn
+Main.tscn::PackedScene::6943916154285291557::1733152284::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
 npc_1.tscn::PackedScene::1386331492094101305::1732998421::0::1::::<><>::uid://davslx2t6vnof::::res://kenney_tiny-dungeon/Tiles/tile_0098.png
 scene_trigger.tscn::PackedScene::6684949769747220447::1733061585::0::1::::<><>::res://script/sceneTrigger.gd
-world.tscn::PackedScene::1227900013768638731::1733134629::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-::res://script/::1733131192
+world.tscn::PackedScene::1227900013768638731::1733154357::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://c04dwgaa8hxbw::::res://scenes/chest.tscn<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
+::res://script/::1733154139
 base_scene.gd::GDScript::-1::1733061504::0::1::::BaseScene<>Node<>::
+chest.gd::GDScript::-1::1733154139::0::1::::<>Node2D<>::
 global.gd::GDScript::-1::1733131192::0::1::::<>Node<>::
 player.gd::GDScript::-1::1733053651::0::1::::Player<>CharacterBody2D<>::
 sceneTrigger.gd::GDScript::-1::1733058523::0::1::::SceneTrigger<>Area2D<>::
@@ -216,3 +226,6 @@ wooden.png::CompressedTexture2D::400241204223419381::1732282090::1732282090::1::
 walls.png::CompressedTexture2D::8683487616398054506::1732282090::1732282090::1::::<><>::
 wooden_door.png::CompressedTexture2D::3839805047893050101::1732282090::1732282090::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::6820714401872726223::1732282090::1732282090::1::::<><>::
+::res://text_box/::1733155276
+textbox.tscn::PackedScene::7272918786586696205::1733155267::0::1::::<><>::
+Untitled-removebg-preview.png::CompressedTexture2D::4208683198102497989::1733155140::1733155277::1::::<><>::

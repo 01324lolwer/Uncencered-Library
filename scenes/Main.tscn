@@ -293,7 +293,7 @@ radius = 4.0
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 y_sort_enabled = true
-collision_layer = 3
+collision_layer = 7
 script = ExtResource("1_mmrtv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -1,10 +1,13 @@
 CollisionShape2D
+CharacterBody2D
+NinePatchRect
+MarginContainer
+Sprite2D
+Label
+Area2D
 Marker2D
 Camera2D
 TileMap
 Node2D
-Area2D
 Node
-Sprite2D
-CharacterBody2D
 AnimatedSprite2D
