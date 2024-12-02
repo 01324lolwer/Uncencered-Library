@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733122325
-default_env.tres::Environment::4870137657657007193::1733080344::0::1::::<><>::
+::res://::1733131269
+building1.tscn::PackedScene::215045211717058150::1733131269::0::1::::<><>::res://script/base_scene.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
+default_env.tres::Environment::4870137657657007193::1733131269::0::1::::<><>::
 follow_cam.gd::GDScript::-1::1733059259::0::1::::<>Camera2D<>::
 icon.png::CompressedTexture2D::2425675078513085472::1732274342::1732275300::1::::<><>::
 ::res://kenney_roguelike-indoors/::1732275300
@@ -153,19 +154,14 @@ tile_0128.png::CompressedTexture2D::3967162536555892525::1732274478::1732275300:
 tile_0129.png::CompressedTexture2D::9158408376714069414::1732274478::1732275300::1::::<><>::
 tile_0130.png::CompressedTexture2D::821738408179931293::1732274478::1732275300::1::::<><>::
 tile_0131.png::CompressedTexture2D::7767768260091428773::1732274478::1732275300::1::::<><>::
-::res://scenes/::1733080343
-building1.tscn::PackedScene::215045211717058150::1733080343::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-building2.tscn::PackedScene::5620831675023069532::1733080343::0::1::::<><>::res://script/base_scene.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-building3.tscn::PackedScene::3691526499836534668::1733080343::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-building4.tscn::PackedScene::2033794199983054408::1733080343::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-building5.tscn::PackedScene::2208746154309154099::1733080343::0::1::::<><>::res://script/base_scene.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
+::res://scenes/::1733131269
 Main.tscn::PackedScene::6943916154285291557::1733061585::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
 npc_1.tscn::PackedScene::1386331492094101305::1732998421::0::1::::<><>::uid://davslx2t6vnof::::res://kenney_tiny-dungeon/Tiles/tile_0098.png
 scene_trigger.tscn::PackedScene::6684949769747220447::1733061585::0::1::::<><>::res://script/sceneTrigger.gd
-world.tscn::PackedScene::1227900013768638731::1733080343::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
-::res://script/::1733068920
+world.tscn::PackedScene::1227900013768638731::1733131269::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn
+::res://script/::1733131192
 base_scene.gd::GDScript::-1::1733061504::0::1::::BaseScene<>Node<>::
-global.gd::GDScript::-1::1733060279::0::1::::<>Node<>::
+global.gd::GDScript::-1::1733131192::0::1::::<>Node<>::
 player.gd::GDScript::-1::1733053651::0::1::::Player<>CharacterBody2D<>::
 sceneTrigger.gd::GDScript::-1::1733058523::0::1::::SceneTrigger<>Area2D<>::
 world.gd::GDScript::-1::1733059310::0::1::::<>BaseScene<>::
