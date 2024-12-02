@@ -423,7 +423,7 @@ layer_2/tile_data = PackedInt32Array(1179653, 196609, 6, 1245189, 196609, 5, 720
 
 [node name="Player" parent="." instance=ExtResource("1_cbifo")]
 top_level = true
-position = Vector2(263, 704)
+position = Vector2(659, 702)
 
 [node name="follow_cam" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
 visible = false
@@ -443,13 +443,13 @@ position = Vector2(654, 230)
 [node name="EntranceMarkers" type="Node2D" parent="."]
 
 [node name="building1" type="Marker2D" parent="EntranceMarkers"]
-position = Vector2(209, 689)
+position = Vector2(208, 684)
 
 [node name="building2" type="Marker2D" parent="EntranceMarkers"]
-position = Vector2(529, 670)
+position = Vector2(528, 668)
 
 [node name="building3" type="Marker2D" parent="EntranceMarkers"]
-position = Vector2(368, 470)
+position = Vector2(368, 462)
 
 [node name="building4" type="Marker2D" parent="EntranceMarkers"]
 position = Vector2(208, 251)
@@ -458,10 +458,10 @@ position = Vector2(208, 251)
 position = Vector2(817, 604)
 
 [node name="building6" type="Marker2D" parent="EntranceMarkers"]
-position = Vector2(1120, 693)
+position = Vector2(1121, 686)
 
 [node name="building7" type="Marker2D" parent="EntranceMarkers"]
-position = Vector2(1120, 257)
+position = Vector2(1120, 253)
 
 [node name="SceneTrigger1" parent="." instance=ExtResource("6_2rdn0")]
 position = Vector2(200, 666)
