@@ -21,6 +21,6 @@ func _process(delta):
 
 #Haus 5 ist 3x grau  1x braun dach
 
-#Haus 6 ist 6x grau dach
+#Haus 6 ist 6x grau dachS
 
 #Haus 7 ist 5x grau 1x braun dach

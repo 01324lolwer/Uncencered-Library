@@ -1714,6 +1714,7 @@ separation = Vector2i(1, 1)
 21:17/0 = 0
 21:17/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 21:17/0/physics_layer_0/angular_velocity = 0.0
+21:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 22:17/0 = 0
 22:17/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 22:17/0/physics_layer_0/angular_velocity = 0.0
@@ -1852,3 +1853,7 @@ connected_scene = "world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(128, 205)
 shape = SubResource("RectangleShape2D_3u6me")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(204, 108)
+zoom = Vector2(3, 3)

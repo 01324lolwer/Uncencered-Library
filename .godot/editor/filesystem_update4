@@ -12,3 +12,10 @@ res://scenes/chest.tscn
 res://scenes/npc_1.tscn
 res://script/npc_1.gd
 res://addons/dialogue_manager/test_scene.tscn
+res://script/player.gd
+res://scenes/actionables.tscn
+res://script/actionables.gd
+res://script/world.gd
+res://dialoge/dialog_variabel.gd
+res://addons/dialogue_manager/dialogue_label.tscn
+res://addons/dialogue_manager/example_balloon/example_balloon.tscn

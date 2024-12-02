@@ -6,148 +6,43 @@
 script = ExtResource("1_xwwhc")
 using_states = PackedStringArray()
 titles = {
-"this_is_a_node_title": "2"
+"start": "3"
 }
-character_names = PackedStringArray("Nathan")
-first_title = "2"
+character_names = PackedStringArray("System")
+first_title = "3"
 lines = {
 "1": {
 "id": "1",
-"next_id": "2",
-"text": "this_is_a_node_title",
+"next_id": "3",
+"text": "start",
 "type": &"title"
 },
-"10": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "10",
-"next_id": "11",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "For more information see the online documentation.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "For more information see the online documentation.",
-"type": &"dialogue"
-},
-"11": {
-"id": "11",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
-},
-"2": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "2",
-"next_id": "3",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "[[Hi|Hello|Howdy]], this is some dialogue.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hi|Hello|Howdy]], this is some dialogue.",
-"type": &"dialogue"
-},
 "3": {
-"character": "Nathan",
+"character": "System",
 "character_replacements": Array[Dictionary]([]),
 "id": "3",
-"next_id": "4",
+"next_id": "6",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Here are some choices.",
+"text": "You have found a letter.
+ ",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Here are some choices.",
-"type": &"dialogue"
-},
-"4": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "4",
-"next_id": "5",
-"next_id_after": "10",
-"notes": "",
-"responses": PackedStringArray("4", "6", "8", "9"),
-"tags": PackedStringArray(),
-"text": "First one",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "First one",
-"type": &"response"
-},
-"5": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "5",
-"next_id": "10",
-"notes": "",
-"parent_id": "4",
-"tags": PackedStringArray(),
-"text": "You picked the first one.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You picked the first one.",
+"translation_key": "You have found a letter.
+ ",
 "type": &"dialogue"
 },
 "6": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "6",
-"next_id": "7",
-"next_id_after": "10",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Second one",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Second one",
-"type": &"response"
-},
-"7": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "7",
-"next_id": "10",
-"notes": "",
-"parent_id": "6",
-"tags": PackedStringArray(),
-"text": "You picked the second one.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You picked the second one.",
-"type": &"dialogue"
-},
-"8": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "8",
-"next_id": "2",
-"next_id_after": "10",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Start again",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Start again",
-"type": &"response"
-},
-"9": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "9",
+"is_snippet": false,
 "next_id": "end",
-"next_id_after": "10",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "End the conversation",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "End the conversation",
-"type": &"response"
+"type": &"goto"
 }
 }
-raw_text = "~ this_is_a_node_title
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
-=> END"
+raw_text = "~ start
+
+System: You have found a letter.
+
+	
+=> END 
+"
 metadata/dialogue_manager_version = "2.44.0"

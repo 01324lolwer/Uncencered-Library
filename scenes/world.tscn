@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://rq2ll51226f4"]
+[gd_scene load_steps=21 format=3 uid="uid://rq2ll51226f4"]
 
 [ext_resource type="PackedScene" uid="uid://c56xjw6wa7m8t" path="res://scenes/Main.tscn" id="1_cbifo"]
 [ext_resource type="Script" path="res://script/world.gd" id="1_lv20b"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://t0sxa05fnou8" path="res://scenes/npc_1.tscn" id="3_nnkjw"]
 [ext_resource type="Script" path="res://follow_cam.gd" id="4_kegwf"]
 [ext_resource type="PackedScene" uid="uid://c2iie72lumcih" path="res://scenes/scene_trigger.tscn" id="6_2rdn0"]
+[ext_resource type="PackedScene" uid="uid://dyibn1g2ojuld" path="res://scenes/actionables.tscn" id="7_e7vkd"]
+[ext_resource type="Resource" uid="uid://brc465e8jefut" path="res://dialoge/dialogue.dialogue" id="8_2h6px"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4umo6"]
 texture = ExtResource("1_yky8o")
@@ -387,6 +389,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4umo6")
 sources/1 = SubResource("TileSetAtlasSource_lapqd")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esbsy"]
+size = Vector2(42, 25.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_comk6"]
 size = Vector2(25, 13.875)
 
@@ -429,11 +434,13 @@ position = Vector2(472, 376)
 top_level = true
 z_index = 15
 y_sort_enabled = false
-position = Vector2(652, 692)
+position = Vector2(365, 504)
+collision_mask = 5
 
-[node name="follow_cam" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
+[node name="follow_cam" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap", "follow_node")]
 visible = false
 position = Vector2(663, 706)
+zoom = Vector2(5, 5)
 limit_left = 0
 limit_top = 0
 limit_right = 1328
@@ -442,9 +449,17 @@ limit_smoothed = true
 position_smoothing_speed = 2.0
 script = ExtResource("4_kegwf")
 tilemap = NodePath("../World Texture")
+follow_node = NodePath("../Player")
 
 [node name="NPC1" parent="." instance=ExtResource("3_nnkjw")]
 position = Vector2(656, 232)
+
+[node name="Actionables" parent="NPC1" instance=ExtResource("7_e7vkd")]
+dialogue_resurce = ExtResource("8_2h6px")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Actionables"]
+position = Vector2(0, 9.25)
+shape = SubResource("RectangleShape2D_esbsy")
 
 [node name="EntranceMarkers" type="Node2D" parent="."]
 

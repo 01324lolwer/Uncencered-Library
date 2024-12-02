@@ -1863,3 +1863,7 @@ connected_scene = "world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(128, 205)
 shape = SubResource("RectangleShape2D_3u6me")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(204, 108)
+zoom = Vector2(3, 3)

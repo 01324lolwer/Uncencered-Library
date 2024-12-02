@@ -3,9 +3,19 @@ class_name Player
 const speed = 100
 var current_dir = "none"
 
+@onready var actionable_finder: Area2D = $ActionableFinder
+
 func player():
 	pass
 	
+
+func _process(delta):
+	if Input.is_action_just_pressed("interact"):
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
+
 func _ready():
 	$AnimatedSprite2D.play("idle_front")
 	add_to_group("Player")

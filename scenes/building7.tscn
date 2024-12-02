@@ -206,12 +206,15 @@ separation = Vector2i(1, 1)
 4:5/0 = 0
 4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:5/0/physics_layer_0/angular_velocity = 0.0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.89019, -3.91757, -6.96894, 1.75208, -5.98463, 1.75208, -3.89788, 2.93325, -3.97663, 6.87051, 3.85851, 6.83113, 3.93725, 2.93325, 5.94525, 1.8702, 6.85082, 1.90957, 6.96894, -3.87819, 6.06337, -3.91757, 2.99231, -5.80745, 2.95294, -6.87051, -2.91357, -6.98862, -2.8742, -6.12243, -5.86651, -3.99631)
 5:5/0 = 0
 5:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:5/0/physics_layer_0/angular_velocity = 0.0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.48985, -6.91016, 4.70031, -6.62954, 6.384, -4.59508, 6.94524, 7.05047, -6.94523, 7.05047, -6.59446, -4.73539)
 6:5/0 = 0
 6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:5/0/physics_layer_0/angular_velocity = 0.0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.84062, -8, 4.84062, -8, 6.73477, -5.54216, 7.01539, 5.68246, 4.34954, 8, -4.13908, 8, -6.87508, 5.7877, -6.87508, -5.64739)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_46kd5"]
 texture = ExtResource("3_v6hi7")
@@ -1840,3 +1843,7 @@ connected_scene = "world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(128, 205)
 shape = SubResource("RectangleShape2D_3u6me")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(204, 108)
+zoom = Vector2(3, 3)
