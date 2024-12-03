@@ -1,15 +1,29 @@
 extends BaseScene
 
 @onready var camera = $follow_cam
-
+@onready var npc1 = $NPC1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	super()
 	camera.follow_node = player
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+# Erstelle eine Instanz der Klasse VariableDialogue
+var dialogue_instance = VariableDialogue.new()
+
+# Rufe die Funktion auf der Instanz auf
+var colision = dialogue_instance.colision_removed
+
+func remove_collision_layers(character_body: CharacterBody2D) -> void:
+	if character_body:
+		# Setzt die Kollisionsschichten auf 0 (keine Schicht aktiv)
+		character_body.set_collision_layer(0)
+		print("Collision layers entfernt für:", character_body.name)
+
 func _process(delta):
-	pass
+	if colision:
+		remove_collision_layers(npc1)
+
 
 #Haus 1 ist 1x grau dach
 

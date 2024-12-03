@@ -7,10 +7,12 @@ else:
 	Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
 	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
 	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} informationen gelesen
-	if counter_Massages_Read > 1:
+	if counter_Massages_Read >= 1:
+		set colision_removed = true
 		set counter_Interaction = 0
 		Gandalf Kühn: Es scheint als bist du vorbereitet
 	elif counter_Massages_Read > 4:
+		set colision_removed = true
 		Gandalf Kühn: Es scheind als bist du gut vorbereitet
 	elif counter_Massages_Read == 0:
 		set counter_Interaction = 0
@@ -22,3 +24,17 @@ else:
 			Du: Nein, Wo ist die Bibilothek?
 			Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 
 => END 
+
+~ info1
+if info1_read:
+	System: Du hast diese Information bereits gelesen
+else:
+	System: Du hast eine Information gefunden!
+	set info1_read = true
+	System:  Willst du sie sehen
+	- Ja
+		set counter_Massages_Read += 1
+		System: Kontext
+	- Nein 
+		System: Deine Entscheidung
+=> END
