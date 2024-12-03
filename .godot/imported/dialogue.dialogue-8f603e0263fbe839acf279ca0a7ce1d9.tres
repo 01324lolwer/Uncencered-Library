@@ -6,129 +6,18 @@
 script = ExtResource("1_ccc6k")
 using_states = PackedStringArray()
 titles = {
-"start": "2"
+"start": "3"
 }
 character_names = PackedStringArray("Gandalf Kühn", "Du")
-first_title = "2"
+first_title = "3"
 lines = {
 "1": {
 "id": "1",
-"next_id": "2",
+"next_id": "3",
 "text": "start",
 "type": &"title"
 },
 "10": {
-"character": "Gandalf Kühn",
-"character_replacements": Array[Dictionary]([]),
-"id": "10",
-"next_id": "11",
-"notes": "",
-"parent_id": "8",
-"tags": PackedStringArray(),
-"text": "Hast du schon in der Bibiliothek nach geschaut?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Hast du schon in der Bibiliothek nach geschaut?",
-"type": &"dialogue"
-},
-"11": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "11",
-"next_id": "12",
-"next_id_after": "16",
-"notes": "",
-"parent_id": "8",
-"responses": PackedStringArray("11", "13"),
-"tags": PackedStringArray(),
-"text": "Ja",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Ja",
-"type": &"response"
-},
-"12": {
-"character": "Du",
-"character_replacements": Array[Dictionary]([]),
-"id": "12",
-"next_id": "16",
-"notes": "",
-"parent_id": "11",
-"tags": PackedStringArray(),
-"text": "Ja ich habe dort schon nachgescchaut.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Ja ich habe dort schon nachgescchaut.",
-"type": &"dialogue"
-},
-"13": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "13",
-"next_id": "14",
-"next_id_after": "16",
-"notes": "",
-"parent_id": "8",
-"tags": PackedStringArray(),
-"text": "Nein",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Nein",
-"type": &"response"
-},
-"14": {
-"character": "Du",
-"character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "15",
-"notes": "",
-"parent_id": "13",
-"tags": PackedStringArray(),
-"text": "Nein, Wo ist die Bibilothek?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Nein, Wo ist die Bibilothek?",
-"type": &"dialogue"
-},
-"15": {
-"character": "Gandalf Kühn",
-"character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "16",
-"notes": "",
-"parent_id": "13",
-"tags": PackedStringArray(),
-"text": "Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt.",
-"type": &"dialogue"
-},
-"16": {
-"id": "16",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
-},
-"2": {
-"character": "Gandalf Kühn",
-"character_replacements": Array[Dictionary]([]),
-"id": "2",
-"next_id": "3",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "[[Hallo.|Grüße Sie.| Guten Tag]]",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hallo.|Grüße Sie.| Guten Tag]]",
-"type": &"dialogue"
-},
-"3": {
-"character": "Gandalf Kühn",
-"character_replacements": Array[Dictionary]([]),
-"id": "3",
-"next_id": "4",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Las mich mal schauen ob du würdig bist den König herauszufordern",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Las mich mal schauen ob du würdig bist den König herauszufordern",
-"type": &"dialogue"
-},
-"4": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -143,26 +32,27 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "4",
-"next_conditional_id": "6",
-"next_id": "5",
-"next_id_after": "16",
+"id": "10",
+"next_conditional_id": "12",
+"next_id": "11",
+"next_id_after": "22",
+"parent_id": "6",
 "type": &"condition"
 },
-"5": {
+"11": {
 "character": "Gandalf Kühn",
 "character_replacements": Array[Dictionary]([]),
-"id": "5",
-"next_id": "16",
+"id": "11",
+"next_id": "22",
 "notes": "",
-"parent_id": "4",
+"parent_id": "10",
 "tags": PackedStringArray(),
 "text": "Es scheint als bist du vorbereitet",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Es scheint als bist du vorbereitet",
 "type": &"dialogue"
 },
-"6": {
+"12": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -177,26 +67,27 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "6",
-"next_conditional_id": "8",
-"next_id": "7",
-"next_id_after": "16",
+"id": "12",
+"next_conditional_id": "14",
+"next_id": "13",
+"next_id_after": "22",
+"parent_id": "6",
 "type": &"condition"
 },
-"7": {
+"13": {
 "character": "Gandalf Kühn",
 "character_replacements": Array[Dictionary]([]),
-"id": "7",
-"next_id": "16",
+"id": "13",
+"next_id": "22",
 "notes": "",
-"parent_id": "6",
+"parent_id": "12",
 "tags": PackedStringArray(),
 "text": "Es scheind als bist du gut vorbereitet",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Es scheind als bist du gut vorbereitet",
 "type": &"dialogue"
 },
-"8": {
+"14": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -211,11 +102,179 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "8",
-"next_conditional_id": "16",
-"next_id": "9",
-"next_id_after": "16",
+"id": "14",
+"next_conditional_id": "22",
+"next_id": "15",
+"next_id_after": "22",
+"parent_id": "6",
 "type": &"condition"
+},
+"15": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "Informiere dich weiter, um den König herauszufordern",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Informiere dich weiter, um den König herauszufordern",
+"type": &"dialogue"
+},
+"16": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "Hast du schon in der Bibiliothek nach geschaut?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hast du schon in der Bibiliothek nach geschaut?",
+"type": &"dialogue"
+},
+"17": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"next_id_after": "22",
+"notes": "",
+"parent_id": "14",
+"responses": PackedStringArray("17", "19"),
+"tags": PackedStringArray(),
+"text": "Ja",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ja",
+"type": &"response"
+},
+"18": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "22",
+"notes": "",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Okay dann suche weiter",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Okay dann suche weiter",
+"type": &"dialogue"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"next_id_after": "22",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "Nein",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Nein",
+"type": &"response"
+},
+"20": {
+"character": "Du",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"notes": "",
+"parent_id": "19",
+"tags": PackedStringArray(),
+"text": "Nein, Wo ist die Bibilothek?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Nein, Wo ist die Bibilothek?",
+"type": &"dialogue"
+},
+"21": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"notes": "",
+"parent_id": "19",
+"tags": PackedStringArray(),
+"text": "Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt.",
+"type": &"dialogue"
+},
+"22": {
+"id": "22",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "counter_Interaction"
+}, {
+"type": "comparison",
+"value": ">"
+}, {
+"type": "number",
+"value": 10
+}, {
+"type": "colon"
+}])
+},
+"id": "3",
+"next_conditional_id": "6",
+"next_id": "4",
+"next_id_after": "22",
+"type": &"condition"
+},
+"4": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "22",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "Solangsam solltest du Gehen!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Solangsam solltest du Gehen!",
+"type": &"dialogue"
+},
+"6": {
+"id": "6",
+"next_conditional_id": "22",
+"next_id": "7",
+"next_id_after": "22",
+"type": &"condition"
+},
+"7": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "[[Hallo.|Grüße Sie.| Guten Tag]]",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "[[Hallo.|Grüße Sie.| Guten Tag]]",
+"type": &"dialogue"
+},
+"8": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "Las mich mal schauen ob du würdig bist den König herauszufordern",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Las mich mal schauen ob du würdig bist den König herauszufordern",
+"type": &"dialogue"
 },
 "9": {
 "character": "Gandalf Kühn",
@@ -223,29 +282,41 @@ lines = {
 "id": "9",
 "next_id": "10",
 "notes": "",
-"parent_id": "8",
+"parent_id": "6",
 "tags": PackedStringArray(),
-"text": "Informiere dich weiter, um den König herauszufordern",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Informiere dich weiter, um den König herauszufordern",
+"text": "Du hast bisher {{counter_Massages_Read}} informationen gelesen",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "counter_Massages_Read"
+}]),
+"value_in_text": "{{counter_Massages_Read}}"
+}]),
+"translation_key": "Du hast bisher {{counter_Massages_Read}} informationen gelesen",
 "type": &"dialogue"
 }
 }
 raw_text = "~ start
-Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
-Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
-if counter_Massages_Read > 1:
-	Gandalf Kühn: Es scheint als bist du vorbereitet
-elif counter_Massages_Read > 4:
-	Gandalf Kühn: Es scheind als bist du gut vorbereitet
-elif counter_Massages_Read == 0:
-	Gandalf Kühn: Informiere dich weiter, um den König herauszufordern
-	Gandalf Kühn: Hast du schon in der Bibiliothek nach geschaut?
-	- Ja
-		Du: Ja ich habe dort schon nachgescchaut.
-	- Nein
-		Du: Nein, Wo ist die Bibilothek?
-		Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 
+
+if counter_Interaction > 10:
+	Gandalf Kühn: Solangsam solltest du Gehen!
+	
+else:
+	Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
+	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
+	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} informationen gelesen
+	if counter_Massages_Read > 1:
+		Gandalf Kühn: Es scheint als bist du vorbereitet
+	elif counter_Massages_Read > 4:
+		Gandalf Kühn: Es scheind als bist du gut vorbereitet
+	elif counter_Massages_Read == 0:
+		Gandalf Kühn: Informiere dich weiter, um den König herauszufordern
+		Gandalf Kühn: Hast du schon in der Bibiliothek nach geschaut?
+		- Ja
+			Gandalf Kühn: Okay dann suche weiter
+		- Nein
+			Du: Nein, Wo ist die Bibilothek?
+			Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 
 => END 
 "
 metadata/dialogue_manager_version = "2.44.0"

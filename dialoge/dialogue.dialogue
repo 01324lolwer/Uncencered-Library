@@ -1,16 +1,22 @@
 ~ start
-Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
-Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
-if counter_Massages_Read > 1:
-	Gandalf Kühn: Es scheint als bist du vorbereitet
-elif counter_Massages_Read > 4:
-	Gandalf Kühn: Es scheind als bist du gut vorbereitet
-elif counter_Massages_Read == 0:
-	Gandalf Kühn: Informiere dich weiter, um den König herauszufordern
-	Gandalf Kühn: Hast du schon in der Bibiliothek nach geschaut?
-	- Ja
-		Du: Ja ich habe dort schon nachgescchaut.
-	- Nein
-		Du: Nein, Wo ist die Bibilothek?
-		Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 
+
+if counter_Interaction > 10:
+	Gandalf Kühn: Solangsam solltest du Gehen!
+	
+else:
+	Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
+	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
+	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} informationen gelesen
+	if counter_Massages_Read > 1:
+		Gandalf Kühn: Es scheint als bist du vorbereitet
+	elif counter_Massages_Read > 4:
+		Gandalf Kühn: Es scheind als bist du gut vorbereitet
+	elif counter_Massages_Read == 0:
+		Gandalf Kühn: Informiere dich weiter, um den König herauszufordern
+		Gandalf Kühn: Hast du schon in der Bibiliothek nach geschaut?
+		- Ja
+			Gandalf Kühn: Okay dann suche weiter
+		- Nein
+			Du: Nein, Wo ist die Bibilothek?
+			Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 
 => END 

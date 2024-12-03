@@ -1,62 +1,44 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fhnle"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mswxo"]
 
 [resource]
-script = ExtResource("1_fhnle")
+script = ExtResource("1_mswxo")
 using_states = PackedStringArray()
 titles = {
-"this_is_a_node_title": "2"
+"start": "2"
 }
-character_names = PackedStringArray("Nathan")
+character_names = PackedStringArray("System")
 first_title = "2"
 lines = {
 "1": {
 "id": "1",
 "next_id": "2",
-"text": "this_is_a_node_title",
+"text": "start",
 "type": &"title"
 },
-"10": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "10",
-"next_id": "11",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "For more information see the online documentation.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "For more information see the online documentation.",
-"type": &"dialogue"
-},
-"11": {
-"id": "11",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
-},
 "2": {
-"character": "Nathan",
+"character": "System",
 "character_replacements": Array[Dictionary]([]),
 "id": "2",
 "next_id": "3",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "[[Hi|Hello|Howdy]], this is some dialogue.",
+"text": "Du hast eine Information gefunden!",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "[[Hi|Hello|Howdy]], this is some dialogue.",
+"translation_key": "Du hast eine Information gefunden!",
 "type": &"dialogue"
 },
 "3": {
-"character": "Nathan",
+"character": "System",
 "character_replacements": Array[Dictionary]([]),
 "id": "3",
 "next_id": "4",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Here are some choices.",
+"text": "Willst du sie sehen",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Here are some choices.",
+"translation_key": "Willst du sie sehen",
 "type": &"dialogue"
 },
 "4": {
@@ -64,90 +46,81 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "4",
 "next_id": "5",
-"next_id_after": "10",
+"next_id_after": "9",
 "notes": "",
-"responses": PackedStringArray("4", "6", "8", "9"),
+"responses": PackedStringArray("4", "7"),
 "tags": PackedStringArray(),
-"text": "First one",
+"text": "Ja",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "First one",
+"translation_key": "Ja",
 "type": &"response"
 },
 "5": {
-"character": "Nathan",
+"character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
-"next_id": "10",
+"next_id": "6",
 "notes": "",
 "parent_id": "4",
 "tags": PackedStringArray(),
-"text": "You picked the first one.",
+"text": "counter_Massages_Read++",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "You picked the first one.",
+"translation_key": "counter_Massages_Read++",
 "type": &"dialogue"
 },
 "6": {
-"character": "",
+"character": "System",
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
-"next_id": "7",
-"next_id_after": "10",
+"next_id": "9",
 "notes": "",
+"parent_id": "4",
 "tags": PackedStringArray(),
-"text": "Second one",
+"text": "Kontext",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Second one",
-"type": &"response"
-},
-"7": {
-"character": "Nathan",
-"character_replacements": Array[Dictionary]([]),
-"id": "7",
-"next_id": "10",
-"notes": "",
-"parent_id": "6",
-"tags": PackedStringArray(),
-"text": "You picked the second one.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You picked the second one.",
+"translation_key": "Kontext",
 "type": &"dialogue"
 },
-"8": {
+"7": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "8",
-"next_id": "2",
-"next_id_after": "10",
+"id": "7",
+"next_id": "8",
+"next_id_after": "9",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Start again",
+"text": "Nein",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Start again",
+"translation_key": "Nein",
 "type": &"response"
 },
-"9": {
-"character": "",
+"8": {
+"character": "System",
 "character_replacements": Array[Dictionary]([]),
-"id": "9",
-"next_id": "end",
-"next_id_after": "10",
+"id": "8",
+"next_id": "9",
 "notes": "",
+"parent_id": "7",
 "tags": PackedStringArray(),
-"text": "End the conversation",
+"text": "Deine Entscheidung",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "End the conversation",
-"type": &"response"
+"translation_key": "Deine Entscheidung",
+"type": &"dialogue"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
 }
 }
-raw_text = "~ this_is_a_node_title
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
+raw_text = "~ start
+System: Du hast eine Information gefunden!
+System:  Willst du sie sehen
+- Ja
+	counter_Massages_Read++
+	System: Kontext
+- Nein 
+	System: Deine Entscheidung
 => END"
 metadata/dialogue_manager_version = "2.44.0"
