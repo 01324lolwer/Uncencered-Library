@@ -23,7 +23,7 @@ DialogVariabel="*res://dialoge/dialog_variabel.gd"
 
 [dialogue_manager]
 
-general/states=["DialogVariabel"]
+general/states=["Global"]
 
 [display]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://rq2ll51226f4"]
+[gd_scene load_steps=22 format=3 uid="uid://rq2ll51226f4"]
 
 [ext_resource type="PackedScene" uid="uid://c56xjw6wa7m8t" path="res://scenes/Main.tscn" id="1_cbifo"]
 [ext_resource type="Script" path="res://script/world.gd" id="1_lv20b"]
@@ -394,6 +394,9 @@ size = Vector2(42, 25.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73oy0"]
 size = Vector2(24, 22)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mye4k"]
+size = Vector2(34, 18)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_comk6"]
 size = Vector2(25, 13.875)
 
@@ -468,7 +471,12 @@ tilemap = NodePath("../World Texture")
 follow_node = NodePath("../Player")
 
 [node name="NPC1" parent="." instance=ExtResource("3_nnkjw")]
+unique_name_in_owner = true
 position = Vector2(656, 233)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mye4k")
 
 [node name="EntranceMarkers" type="Node2D" parent="."]
 

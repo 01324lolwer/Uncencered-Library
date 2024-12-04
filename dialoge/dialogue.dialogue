@@ -1,4 +1,5 @@
 ~ start
+
 set counter_Interaction += 1
 if counter_Interaction > 2:
 	Gandalf Kühn: Solangsam solltest du Gehen!
@@ -6,20 +7,22 @@ if counter_Interaction > 2:
 else:
 	Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
 	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
-	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} informationen gelesen
+	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} von {{Massages_All}} informationen gelesen
 	if counter_Massages_Read >= 1:
 		set colision_removed = true
 		set counter_Interaction = 0
 		Gandalf Kühn: Es scheint als bist du vorbereitet
+		Gandalf Kühn: Du kannst nun an mir vorbei gehen
 	elif counter_Massages_Read > 4:
 		set colision_removed = true
 		Gandalf Kühn: Es scheind als bist du gut vorbereitet
+		Gandalf Kühn: Du kannst nun an mir vorbei gehen
 	elif counter_Massages_Read == 0:
 		set counter_Interaction = 0
 		Gandalf Kühn: Informiere dich weiter, um den König herauszufordern
 		Gandalf Kühn: Hast du schon in der Bibiliothek nach geschaut?
 		- Ja
-			Gandalf Kühn: Okay dann suche weiter
+			Gandalf Kühn: Okay dann suche in anderen Gebäuden weiter
 		- Nein
 			Du: Nein, Wo ist die Bibilothek?
 			Gandalf Kühn: Die Bibliothek findest du auf der linken Seite, nicht weit von mir entfehrnt. 

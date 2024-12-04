@@ -1,29 +1,26 @@
 extends BaseScene
+class_name World
 
+var colision_removed: bool = Global.colision_removed
 @onready var camera = $follow_cam
-@onready var npc1 = $NPC1
+@onready var collision = %NPC1
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	super()
 	camera.follow_node = player
 
-
-# Erstelle eine Instanz der Klasse VariableDialogue
-var dialogue_instance = VariableDialogue.new()
-
-# Rufe die Funktion auf der Instanz auf
-var colision = dialogue_instance.colision_removed
-
-func remove_collision_layers(character_body: CharacterBody2D) -> void:
-	if character_body:
-		# Setzt die Kollisionsschichten auf 0 (keine Schicht aktiv)
-		character_body.set_collision_layer(0)
-		print("Collision layers entfernt für:", character_body.name)
-
 func _process(delta):
-	if colision:
-		remove_collision_layers(npc1)
-
+	colision_disable()
+	
+func colision_disable():
+	if colision_removed:
+		print(colision_removed)
+		collision.set_collision_layer(0)
+		print("disabled")
+		Global.entered = true
+	else:
+		pass
 
 #Haus 1 ist 1x grau dach
 
