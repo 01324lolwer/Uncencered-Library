@@ -1,4 +1,5 @@
 CollisionShape2D
+Marker2D
 Area2D
 Camera2D
 CharacterBody2D
@@ -6,7 +7,6 @@ NinePatchRect
 MarginContainer
 Sprite2D
 Label
-Marker2D
 TileMap
 Node2D
 Node
