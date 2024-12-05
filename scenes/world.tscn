@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=3 uid="uid://rq2ll51226f4"]
+[gd_scene load_steps=25 format=3 uid="uid://rq2ll51226f4"]
 
 [ext_resource type="PackedScene" uid="uid://c56xjw6wa7m8t" path="res://scenes/Main.tscn" id="1_cbifo"]
 [ext_resource type="Script" path="res://script/world.gd" id="1_lv20b"]
 [ext_resource type="Texture2D" uid="uid://dmqynbmraf5cc" path="res://kenney_tiny-dungeon/Tilemap/tilemap.png" id="1_yky8o"]
+[ext_resource type="Texture2D" uid="uid://krduvyspwjv8" path="res://King.png" id="3_0ktfh"]
 [ext_resource type="PackedScene" uid="uid://t0sxa05fnou8" path="res://scenes/npc_1.tscn" id="3_nnkjw"]
-[ext_resource type="Script" path="res://follow_cam.gd" id="4_kegwf"]
+[ext_resource type="Script" path="res://script/follow_cam.gd" id="4_kegwf"]
 [ext_resource type="PackedScene" uid="uid://c2iie72lumcih" path="res://scenes/scene_trigger.tscn" id="6_2rdn0"]
 [ext_resource type="PackedScene" uid="uid://dyibn1g2ojuld" path="res://scenes/actionables.tscn" id="7_e7vkd"]
 [ext_resource type="Resource" uid="uid://brc465e8jefut" path="res://dialoge/dialogue.dialogue" id="8_2h6px"]
@@ -383,13 +384,33 @@ separation = Vector2i(1, 1)
 6:5/0/physics_layer_0/angular_velocity = 0.0
 6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.01563, -5.90625, -4.82813, -8, 4.54688, -8, 6.95313, -5.96875, 6.85938, 5.8125, 3.67188, 8, -3.82813, 8, -6.89063, 5.9375)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ulrsa"]
+texture = ExtResource("3_0ktfh")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 3.99877, 7.068, 3.96369, 6.78739, 3.12185, 2.08708, 3.08677, 2.08708, 8, 8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.98031, 2.82369, -7.01539, 2.89385, 3.96369, 4.92831, 5.05108, 4.92831, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.06923, -8, 3.03416, 4.87569, 5.03354, 4.87569, 4.96339, 4.06892, 8, 4.06892, 8, -8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 3.85846, -6.89262, 3.96369, -6.9277, 4.94585, -3.10431, 4.87569, -2.99908, 1.01723, -2.01692, 1.01723, -1.91169, 4.87569, 1.84154, 4.98092, 1.94677, 3.99877, 4.92831, 3.92862, 4.92831, -6.94523, 3.94616, -8)
+
 [sub_resource type="TileSet" id="TileSet_e8gfy"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4umo6")
 sources/1 = SubResource("TileSetAtlasSource_lapqd")
+sources/6 = SubResource("TileSetAtlasSource_ulrsa")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_esbsy"]
-size = Vector2(42, 25.5)
+size = Vector2(42, 36.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73oy0"]
 size = Vector2(24, 22)
@@ -440,7 +461,7 @@ position = Vector2(656, 217)
 dialogue_resurce = ExtResource("8_2h6px")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World Texture/ActionablesGK"]
-position = Vector2(0, 5)
+position = Vector2(0, -0.625)
 shape = SubResource("RectangleShape2D_esbsy")
 
 [node name="ActionablesInfo1" parent="World Texture" instance=ExtResource("7_e7vkd")]
