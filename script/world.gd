@@ -4,6 +4,7 @@ class_name World
 var colision_removed: bool = Global.colision_removed
 @onready var camera = $follow_cam
 @onready var collision = %NPC1
+var position = Vector2(612,150) 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,6 +18,7 @@ func colision_disable():
 	if colision_removed:
 		print(colision_removed)
 		collision.set_collision_layer(0)
+		collision.global_position = position
 		print("disabled")
 		Global.entered = true
 	else:

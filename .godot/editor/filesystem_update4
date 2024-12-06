@@ -11,3 +11,4 @@ res://scenes/building6.tscn
 res://scenes/building7.tscn
 res://scenes/KingPalast.tscn
 res://scenes/fence.tscn
+res://script/world.gd
