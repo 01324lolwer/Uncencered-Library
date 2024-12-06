@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlbi4aasynsh1"]
+[gd_scene load_steps=10 format=3 uid="uid://dlbi4aasynsh1"]
 
 [ext_resource type="Texture2D" uid="uid://dmqynbmraf5cc" path="res://kenney_tiny-dungeon/Tilemap/tilemap.png" id="1_ikmws"]
 [ext_resource type="Script" path="res://script/base_scene.gd" id="1_psysm"]
@@ -1872,30 +1872,10 @@ separation = Vector2i(1, 1)
 23:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 23:0/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_msfp7"]
-texture = ExtResource("4_y8qx3")
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4.06892, 6.99785, 4.104, 6.89262, 3.12185, 2.052, 3.05169, 2.15723, 8, 8, 8)
-1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.98031, 3.03415, -7.01539, 2.89385, 4.03385, 3.91108, 4.06892, 4.01631, 4.98092, 4.92831, 5.15631, 5.03354, 6.87508, 4.01631, 6.91016, 4.08646, 8, -8, 8)
-0:1/0 = 0
-0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:1/0/physics_layer_0/angular_velocity = 0.0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 3.10431, -8, 3.06923, 4.94585, 4.89323, 4.91077, 5.10369, 3.96369, 8, 3.99877)
-1:1/0 = 0
-1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:1/0/physics_layer_0/angular_velocity = 0.0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 4.05139, -8, 4.01631, -7.08554, 4.99846, -7.12062, 4.89323, 3.92862, 2.052, 3.92862, 2.052, 4.91077, -6.82246, 5.05108, -6.85754, 3.92862, -8, 3.96369)
-
 [sub_resource type="TileSet" id="TileSet_2y7y3"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_dssqd")
 sources/1 = SubResource("TileSetAtlasSource_46kd5")
-sources/2 = SubResource("TileSetAtlasSource_msfp7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wsrmy"]
 size = Vector2(44, 24)
@@ -1930,3 +1910,8 @@ connected_scene = "world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger"]
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_wsrmy")
+
+[node name="King" type="Sprite2D" parent="."]
+position = Vector2(192, 85)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_y8qx3")

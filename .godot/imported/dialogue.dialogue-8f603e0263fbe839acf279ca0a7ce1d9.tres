@@ -193,13 +193,13 @@ lines = {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
-"value": "colision_removed"
+"value": "counter_Interaction"
 }, {
 "type": "assignment",
 "value": "="
 }, {
-"type": "variable",
-"value": "true"
+"type": "number",
+"value": 0
 }]),
 "is_blocking": true
 },
@@ -313,23 +313,17 @@ lines = {
 "type": &"dialogue"
 },
 "12": {
+"character": "Gandalf Kühn",
+"character_replacements": Array[Dictionary]([]),
 "id": "12",
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "counter_Interaction"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "number",
-"value": 0
-}]),
-"is_blocking": true
-},
 "next_id": "13",
+"notes": "",
 "parent_id": "10",
-"type": &"mutation"
+"tags": PackedStringArray(),
+"text": "Es scheint als bist du vorbereitet",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Es scheint als bist du vorbereitet",
+"type": &"dialogue"
 },
 "120": {
 "character": "",
@@ -446,17 +440,23 @@ lines = {
 "type": &"dialogue"
 },
 "13": {
-"character": "Gandalf Kühn",
-"character_replacements": Array[Dictionary]([]),
 "id": "13",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "colision_removed"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
 "next_id": "14",
-"notes": "",
 "parent_id": "10",
-"tags": PackedStringArray(),
-"text": "Es scheint als bist du vorbereitet",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Es scheint als bist du vorbereitet",
-"type": &"dialogue"
+"type": &"mutation"
 },
 "130": {
 "id": "130",
@@ -1561,7 +1561,7 @@ lines = {
 "notes": "",
 "parent_id": "6",
 "tags": PackedStringArray(),
-"text": "Du hast bisher {{counter_Massages_Read}} von {{Massages_All}} informationen gelesen",
+"text": "Du hast bisher [wait=1.5]{{counter_Massages_Read}} von [wait=1.5]{{Massages_All}} Informationen gelesen",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1575,7 +1575,7 @@ lines = {
 }]),
 "value_in_text": "{{Massages_All}}"
 }]),
-"translation_key": "Du hast bisher {{counter_Massages_Read}} von {{Massages_All}} informationen gelesen",
+"translation_key": "Du hast bisher [wait=1.5]{{counter_Massages_Read}} von [wait=1.5]{{Massages_All}} Informationen gelesen",
 "type": &"dialogue"
 },
 "90": {
@@ -1704,12 +1704,12 @@ if counter_Interaction > 2:
 	set counter_Interaction = 0
 else:
 	Gandalf Kühn: [[Hallo.|Grüße Sie.| Guten Tag]]
-	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern
-	Gandalf Kühn:  Du hast bisher {{counter_Massages_Read}} von {{Massages_All}} informationen gelesen
+	Gandalf Kühn: Las mich mal schauen ob du würdig bist den König herauszufordern 
+	Gandalf Kühn: Du hast bisher [wait=1.5]{{counter_Massages_Read}} von [wait=1.5]{{Massages_All}} Informationen gelesen 
 	if counter_Massages_Read >= 3:
-		set colision_removed = true
 		set counter_Interaction = 0
 		Gandalf Kühn: Es scheint als bist du vorbereitet
+		set colision_removed = true
 		Gandalf Kühn: Du kannst nun an mir vorbei gehen
 	elif counter_Massages_Read > 5:
 		set colision_removed = true

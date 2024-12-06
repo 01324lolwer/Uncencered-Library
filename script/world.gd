@@ -5,6 +5,7 @@ var colision_removed: bool = Global.colision_removed
 @onready var camera = $follow_cam
 @onready var collision = %NPC1
 var position = Vector2(612,150) 
+var position2 = Vector2(655,232)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,6 +14,7 @@ func _ready():
 
 func _process(delta):
 	colision_disable()
+	npc_position()
 	
 func colision_disable():
 	if colision_removed:
@@ -23,6 +25,12 @@ func colision_disable():
 		Global.entered = true
 	else:
 		pass
+
+func npc_position():
+	if Global.entered:
+		collision.global_position = position
+	else:
+		collision.global_position = position2
 
 #Haus 1 ist 1x grau dach
 
