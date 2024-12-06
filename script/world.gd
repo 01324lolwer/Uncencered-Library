@@ -29,6 +29,7 @@ func colision_disable():
 func npc_position():
 	if Global.entered:
 		collision.global_position = position
+		collision.set_collision_layer(0)
 	else:
 		collision.global_position = position2
 
