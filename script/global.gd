@@ -6,7 +6,7 @@ var last_scene_name: String
 
 
 var entered:bool = false
-var counter_Massages_Read = 1
+var counter_Massages_Read = 3
 var counter_Interaction = 0
 var colision_removed: bool = false
 var info1_read = false
@@ -19,6 +19,7 @@ func change_scene(from, to_scene_name: String) -> void:
 	
 	var full_path = scene_dir_path + to_scene_name + ".tscn"
 	from.get_tree().call_deferred("change_scene_to_file", full_path)
+
 
 @warning_ignore("unused_parameter")
 func _process(delta):

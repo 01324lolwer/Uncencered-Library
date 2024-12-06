@@ -1,18 +1,18 @@
 c693a20e708c4e09bfa9edf12a750cf8
-::res://::1733426981
-default_env.tres::Environment::4870137657657007193::1733426981::0::1::::<><>::
+::res://::1733467652
+default_env.tres::Environment::4870137657657007193::1733430542::0::1::::<><>::
 dialog_info1.dialogue::Resource::3065125501819166158::1733234086::1733234086::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 icon.png::CompressedTexture2D::2425675078513085472::1732274342::1732275300::1::::<><>::
 King.png::CompressedTexture2D::737201865960154863::1733425848::1733425849::1::::<><>::
 king_pixelart_16x16.png::CompressedTexture2D::7974825943179196445::1733424219::1733424220::1::::<><>::
 king_pixelart_32x32.png::CompressedTexture2D::8934266944764892980::1733424189::1733424189::1::::<><>::
 ::res://addons/::1733158134
-::res://addons/dialogue_manager/::1733165074
+::res://addons/dialogue_manager/::1733430542
 constants.gd::GDScript::-1::1733158135::0::1::::<>Node<>::
 dialogue_label.gd::GDScript::-1::1733158135::0::1::::DialogueLabel<>RichTextLabel<>res://addons/dialogue_manager/assets/icon.svg::
 dialogue_label.tscn::PackedScene::5518490004210093266::1733165074::0::1::::<><>::res://addons/dialogue_manager/dialogue_label.gd
 dialogue_line.gd::GDScript::-1::1733158135::0::1::::DialogueLine<>RefCounted<>::
-dialogue_manager.gd::GDScript::-1::1733158135::0::1::::<>Node<>::
+dialogue_manager.gd::GDScript::-1::1733430542::0::1::::<>Node<>::
 dialogue_reponses_menu.gd::GDScript::-1::1733158135::0::1::::DialogueResponsesMenu<>Container<>res://addons/dialogue_manager/assets/responses_menu.svg::
 dialogue_resource.gd::GDScript::-1::1733158135::0::1::::DialogueResource<>Resource<>res://addons/dialogue_manager/assets/icon.svg::
 dialogue_response.gd::GDScript::-1::1733158135::0::1::::DialogueResponse<>RefCounted<>::
@@ -75,7 +75,7 @@ main_view.gd::GDScript::-1::1733158135::0::1::::<>Control<>::
 main_view.tscn::PackedScene::4884668666408697448::1733158135::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cpg4lg1r3ff6m::::res://addons/dialogue_manager/views/settings_view.tscn<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
 settings_view.gd::GDScript::-1::1733158135::0::1::::<>TabContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1733158135::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
-::res://dialoge/::1733426981
+::res://dialoge/::1733430542
 dialogue.dialogue::Resource::3585577516840332063::1733430542::1733430542::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 dialog_variabel.gd::GDScript::-1::1733335965::0::1::::VariableDialogue<>Node<>::
 ::res://fonts/::1733152092
@@ -231,7 +231,7 @@ tile_0128.png::CompressedTexture2D::3967162536555892525::1732274478::1732275300:
 tile_0129.png::CompressedTexture2D::9158408376714069414::1732274478::1732275300::1::::<><>::
 tile_0130.png::CompressedTexture2D::821738408179931293::1732274478::1732275300::1::::<><>::
 tile_0131.png::CompressedTexture2D::7767768260091428773::1732274478::1732275300::1::::<><>::
-::res://scenes/::1733426981
+::res://scenes/::1733430542
 actionables.tscn::PackedScene::8860394628859861329::1733313334::0::1::::<><>::res://script/actionables.gd
 building1.tscn::PackedScene::215045211717058150::1733426826::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
 building2.tscn::PackedScene::7535198973789746612::1733426826::0::1::::<><>::uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>res://script/base_scene.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://sabdio1p03e8::::res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png
@@ -245,7 +245,7 @@ KingPalast.tscn::PackedScene::7933941233667534584::1733426828::0::1::::<><>::uid
 Main.tscn::PackedScene::6943916154285291557::1733167647::0::1::::<><>::res://script/player.gd<>uid://d4gemdorra1ej::::res://sprites Character/characters/player.png
 npc_1.tscn::PackedScene::1386331492094101305::1733426826::0::1::::<><>::res://script/npc_1.gd<>uid://davslx2t6vnof::::res://kenney_tiny-dungeon/Tiles/tile_0098.png
 scene_trigger.tscn::PackedScene::6684949769747220447::1733061585::0::1::::<><>::res://script/sceneTrigger.gd
-world.tscn::PackedScene::1227900013768638731::1733426981::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://krduvyspwjv8::::res://King.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://script/follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://dyibn1g2ojuld::::res://scenes/actionables.tscn<>uid://brc465e8jefut::::res://dialoge/dialogue.dialogue
+world.tscn::PackedScene::1227900013768638731::1733430542::0::1::::<><>::uid://c56xjw6wa7m8t::::res://scenes/Main.tscn<>res://script/world.gd<>uid://dmqynbmraf5cc::::res://kenney_tiny-dungeon/Tilemap/tilemap.png<>uid://krduvyspwjv8::::res://King.png<>uid://t0sxa05fnou8::::res://scenes/npc_1.tscn<>res://script/follow_cam.gd<>uid://c2iie72lumcih::::res://scenes/scene_trigger.tscn<>uid://dyibn1g2ojuld::::res://scenes/actionables.tscn<>uid://brc465e8jefut::::res://dialoge/dialogue.dialogue
 ::res://script/::1733423595
 actionables.gd::GDScript::-1::1733423595::0::1::::<>Area2D<>::
 base_scene.gd::GDScript::-1::1733061504::0::1::::BaseScene<>Node<>::

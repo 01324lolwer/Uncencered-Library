@@ -1,8 +1,8 @@
 CollisionShape2D
+CharacterBody2D
 Marker2D
 Area2D
 Camera2D
-CharacterBody2D
 NinePatchRect
 MarginContainer
 Sprite2D
