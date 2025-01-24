@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dlbi4aasynsh1"]
+[gd_scene load_steps=13 format=3 uid="uid://dlbi4aasynsh1"]
 
 [ext_resource type="Texture2D" uid="uid://dmqynbmraf5cc" path="res://kenney_tiny-dungeon/Tilemap/tilemap.png" id="1_ikmws"]
 [ext_resource type="Script" path="res://script/base_scene.gd" id="1_psysm"]
 [ext_resource type="PackedScene" uid="uid://c2iie72lumcih" path="res://scenes/scene_trigger.tscn" id="3_7leh8"]
 [ext_resource type="Texture2D" uid="uid://sabdio1p03e8" path="res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png" id="3_v6hi7"]
 [ext_resource type="Texture2D" uid="uid://krduvyspwjv8" path="res://King.png" id="4_y8qx3"]
+[ext_resource type="PackedScene" uid="uid://dyibn1g2ojuld" path="res://scenes/actionables.tscn" id="6_ydhel"]
+[ext_resource type="Resource" uid="uid://brc465e8jefut" path="res://dialoge/dialogue.dialogue" id="7_d4rnv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dssqd"]
 texture = ExtResource("1_ikmws")
@@ -1880,6 +1882,9 @@ sources/1 = SubResource("TileSetAtlasSource_46kd5")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wsrmy"]
 size = Vector2(44, 24)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_j8eff"]
+radius = 24.0
+
 [node name="KingPalast" type="Node2D"]
 script = ExtResource("1_psysm")
 
@@ -1915,3 +1920,12 @@ shape = SubResource("RectangleShape2D_wsrmy")
 position = Vector2(192, 85)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("4_y8qx3")
+
+[node name="Actionables" parent="." instance=ExtResource("6_ydhel")]
+position = Vector2(189, 87)
+dialogue_resurce = ExtResource("7_d4rnv")
+dialogue_start = "king"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables"]
+position = Vector2(3, -2)
+shape = SubResource("CircleShape2D_j8eff")

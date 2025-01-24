@@ -4,13 +4,21 @@ class_name World
 var colision_removed: bool = Global.colision_removed
 @onready var camera = $follow_cam
 @onready var collision = %NPC1
+@onready var label = $Label1
+@onready var actonabel = $WorldTexture/ActionablesInfo1
 var position = Vector2(612,150) 
 var position2 = Vector2(655,232)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	balabub()
+	print("Ready ausgeführt") 
 	super()
 	camera.follow_node = player
+
+func balabub():
+	label.hide()
+
 
 func _process(delta):
 	colision_disable()
@@ -25,6 +33,7 @@ func colision_disable():
 		Global.entered = true
 	else:
 		pass
+
 
 func npc_position():
 	if Global.entered:
@@ -46,3 +55,11 @@ func npc_position():
 #Haus 6 ist 6x grau dachS
 
 #Haus 7 ist 5x grau 1x braun dach
+
+
+func _on_actionables_info_1_body_entered(body):
+	label.show()
+
+
+func _on_actionables_info_1_body_exited(body):
+	label.hide()

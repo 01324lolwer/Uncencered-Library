@@ -1,12 +1,12 @@
+Label
+Area2D
 CollisionShape2D
 CharacterBody2D
 Marker2D
-Area2D
 Camera2D
 NinePatchRect
 MarginContainer
 Sprite2D
-Label
 TileMap
 Node2D
 Node
