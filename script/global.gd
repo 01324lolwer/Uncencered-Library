@@ -6,7 +6,7 @@ var last_scene_name: String
 
 
 var entered:bool = false
-var counter_Massages_Read = 5
+var counter_Massages_Read = 0
 var counter_Interaction = 0
 var colision_removed: bool = false
 var info1_read = false
