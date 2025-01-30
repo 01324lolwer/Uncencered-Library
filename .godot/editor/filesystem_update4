@@ -1,10 +1,6 @@
-res://interactions/interaction areas/interaction_area.gd
 res://default_env.tres
-res://interactions/interaction areas/interaction_area.tscn
-res://script/actionables.gd
-res://interactions/InteractionManager.gd
-res://script/world.gd
 res://scenes/world.tscn
+res://script/actionables.gd
 res://scenes/npc_1.tscn
 res://scenes/building1.tscn
 res://scenes/building2.tscn
@@ -16,3 +12,5 @@ res://scenes/building7.tscn
 res://scenes/KingPalast.tscn
 res://scenes/Main.tscn
 res://scenes/actionables.tscn
+res://script/global.gd
+res://script/world.gd

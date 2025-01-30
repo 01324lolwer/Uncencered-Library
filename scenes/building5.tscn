@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cyo31r6fah8t7"]
+[gd_scene load_steps=15 format=3 uid="uid://cyo31r6fah8t7"]
 
 [ext_resource type="Texture2D" uid="uid://dmqynbmraf5cc" path="res://kenney_tiny-dungeon/Tilemap/tilemap.png" id="1_ikmws"]
 [ext_resource type="Script" path="res://script/base_scene.gd" id="1_psysm"]
 [ext_resource type="PackedScene" uid="uid://c2iie72lumcih" path="res://scenes/scene_trigger.tscn" id="3_7leh8"]
 [ext_resource type="Texture2D" uid="uid://sabdio1p03e8" path="res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png" id="3_v6hi7"]
 [ext_resource type="Texture2D" uid="uid://dtblp6dle7olh" path="res://kenney_roguelike-indoors/Tilesheets/WhatsApp Bild 2024-12-02 um 10.45.56_1c713cfc.jpg" id="4_n1vgb"]
+[ext_resource type="PackedScene" uid="uid://dyibn1g2ojuld" path="res://scenes/actionables.tscn" id="6_mkdhm"]
+[ext_resource type="Resource" uid="uid://brc465e8jefut" path="res://dialoge/dialogue.dialogue" id="7_pj3jr"]
+[ext_resource type="FontFile" uid="uid://dswg2363nilte" path="res://fonts/Minecraftia-Regular.ttf" id="8_44a5r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dssqd"]
 texture = ExtResource("1_ikmws")
@@ -3413,6 +3416,9 @@ sources/2 = SubResource("TileSetAtlasSource_f3nh4")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3u6me"]
 size = Vector2(47, 19)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1beui"]
+radius = 19.0
+
 [node name="building5" type="Node2D"]
 script = ExtResource("1_psysm")
 
@@ -3444,3 +3450,28 @@ shape = SubResource("RectangleShape2D_3u6me")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(204, 108)
 zoom = Vector2(3, 3)
+
+[node name="Actionables" parent="." instance=ExtResource("6_mkdhm")]
+position = Vector2(260, 132)
+dialogue_resurce = ExtResource("7_pj3jr")
+dialogue_start = "infoHaus5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables"]
+position = Vector2(1, -3)
+shape = SubResource("CircleShape2D_1beui")
+
+[node name="Label1" type="Label" parent="."]
+z_index = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 236.0
+offset_top = 107.0
+offset_right = 372.0
+offset_bottom = 135.0
+grow_horizontal = 2
+scale = Vector2(0.4, 0.4)
+theme_override_fonts/font = ExtResource("8_44a5r")
+text = "[E] to interact"
+horizontal_alignment = 1
+vertical_alignment = 1

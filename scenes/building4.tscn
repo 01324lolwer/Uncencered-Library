@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b1tewu5fkn1ej"]
+[gd_scene load_steps=12 format=3 uid="uid://b1tewu5fkn1ej"]
 
 [ext_resource type="Texture2D" uid="uid://dmqynbmraf5cc" path="res://kenney_tiny-dungeon/Tilemap/tilemap.png" id="1_ikmws"]
 [ext_resource type="Script" path="res://script/base_scene.gd" id="1_psysm"]
 [ext_resource type="PackedScene" uid="uid://c2iie72lumcih" path="res://scenes/scene_trigger.tscn" id="3_7leh8"]
 [ext_resource type="Texture2D" uid="uid://sabdio1p03e8" path="res://kenney_roguelike-indoors/Tilesheets/roguelikeIndoor_transparent.png" id="3_v6hi7"]
+[ext_resource type="PackedScene" uid="uid://dyibn1g2ojuld" path="res://scenes/actionables.tscn" id="5_y05w5"]
+[ext_resource type="FontFile" uid="uid://dswg2363nilte" path="res://fonts/Minecraftia-Regular.ttf" id="6_4x6t3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dssqd"]
 texture = ExtResource("1_ikmws")
@@ -1836,6 +1838,9 @@ sources/1 = SubResource("TileSetAtlasSource_46kd5")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3u6me"]
 size = Vector2(47, 19)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_wkb5w"]
+radius = 20.0
+
 [node name="building4" type="Node2D"]
 script = ExtResource("1_psysm")
 
@@ -1867,3 +1872,26 @@ shape = SubResource("RectangleShape2D_3u6me")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(204, 108)
 zoom = Vector2(3, 3)
+
+[node name="Actionables" parent="." instance=ExtResource("5_y05w5")]
+position = Vector2(51, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables"]
+position = Vector2(3, -1)
+shape = SubResource("CircleShape2D_wkb5w")
+
+[node name="Label1" type="Label" parent="."]
+z_index = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 30.0
+offset_top = 19.0
+offset_right = 166.0
+offset_bottom = 47.0
+grow_horizontal = 2
+scale = Vector2(0.4, 0.4)
+theme_override_fonts/font = ExtResource("6_4x6t3")
+text = "[E] to interact"
+horizontal_alignment = 1
+vertical_alignment = 1

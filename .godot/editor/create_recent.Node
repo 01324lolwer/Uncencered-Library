@@ -1,7 +1,7 @@
-Label
-Area2D
 CollisionShape2D
 CharacterBody2D
+Label
+Area2D
 Marker2D
 Camera2D
 NinePatchRect

@@ -37,18 +37,157 @@ else:
 
 ~ king
 if counter_Massages_Read == Massages_All:
-	Fürst Meternich: Über welches Thema soll ich dich Abfragen?
-	- Wiener Kongres
+	Fürst Meternich: Es scheint als bist du gut informiert
+	Fürst Meternich: Ich frage dich nun ab
+	Fürst Meternich: Welche Rolle spielte der Wiener Kongress bei der Neugestaltung Europas nach Napoleons Niederlage?
+	- Er stellte die monarchische Ordnung wieder her und schuf ein Gleichgewicht der Mächte.
+		Fürst Meternich: Richtig 
+		set massages_true += 1
+	- Er führte zur Auflösung aller Monarchien und zur Einführung von Demokratien in Europa.
+		Fürst Meternich: Falsch
 		
-	- Hambacher Fest
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Inwiefern beeinflusste Fürst von Metternichs Führungsstil die Ergebnisse des Wiener Kongresses?
+	- Er förderte die Einführung demokratischer Verfassungen in ganz Europa.
+		Fürst Meternich: Leider Falsch
+	- Er setzte sich für die Restauration der Monarchien und gegen revolutionäre Bewegungen ein.
+		Fürst Meternich: Richtig
+		set massages_true += 1
+		
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Warum wurden demokratische und nationale Bestrebungen als Bedrohung für die europäische Stabilität angesehen?
+	- Sie wurden als harmlose Ideen betrachtet, die keine Auswirkungen auf Europa hatten.
+		Fürst Meternich: Leider Falsch
+	- Sie hätten das monarchische System gefährdet und zu Unruhen geführt.
+		Fürst Meternich: Richtig
+		set massages_true += 1
+		
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Welche langfristigen Auswirkungen hatte die Neuordnung der europäischen Grenzen auf die politischen Verhältnisse?
+	- Sie führte dazu, dass alle europäischen Länder friedlich vereint wurden.
+		Fürst Meternich: Leider Falsch
+	- Sie sorgte für ein Machtgleichgewicht, aber auch für Spannungen und spätere Konflikte.
+		Fürst Meternich: Richtig
+		set massages_true += 1
+		
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Warum war der Deutsche Bund kein einheitlicher Staat, und welche Herausforderungen ergaben sich daraus?
+	- Er war ein loser Zusammenschluss ohne zentrale Regierung, was Entscheidungen erschwerte.
+		Fürst Meternich: Richtig
+		set massages_true += 1
+	- Er war eine starke Zentralmacht mit einem einheitlichen Regierungssystem.
+		Fürst Meternich: Leider Falsch
+	
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Wie versuchte die Heilige Allianz, revolutionäre Bewegungen zu unterdrücken, und mit welchem Erfolg?
+	-  Sie unterstützte Monarchien militärisch und politisch, konnte Revolutionen aber nicht dauerhaft verhindern.
+		Fürst Meternich: Richtig
+		set messages_true += 1
+	- Sie förderte aktiv revolutionäre Bewegungen in Europa.
+		Fürst Meternich: Leider Falsch
+		
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Inwiefern trugen die Beschlüsse des Wiener Kongresses indirekt zu den Revolutionen von 1848 bei?
+	- Die Unterdrückung liberaler und nationaler Bewegungen führte zu wachsender Unzufriedenheit. 
+		Fürst Meternich: Richtig
+		set messages_true += 1
+	- Der Wiener Kongress gewährte allen Bürgern demokratische Rechte, wodurch es keine Aufstände gab.
+		Fürst Meternich: Leider Falsch
+	
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Wie beeinflusste meine Politik der Restauration die Entwicklung Europas bis zur Revolution von 1848?
+	-  Meine konservative Politik unterdrückte Reformen, was zu wachsender Unzufriedenheit führte.
+		Fürst Meternich: Richtig
+		set messages_true += 1
+	- Ich setzte mich für demokratische Reformen ein und unterstützte revolutionäre Bewegungen.
+		Fürst Meternich: Leider Falsch
+	
+	Fürst Meternich: Nächste Frage
+	Fürst Meternich: Inwiefern legten die Reformen von Freiherr vom Stein den Grundstein für die spätere Entwicklung eines deutschen Nationalstaats?
+	-  Seine Reformen stärkten Preußen wirtschaftlich und politisch, was spätere Einheitsbestrebungen erleichterte.
+		Fürst Meternich: Richtig
+		set messages_true += 1
+	- Seine Reformen führten zur sofortigen Gründung des Deutschen Kaiserreichs im Jahr 1815.
+		Fürst Meternich: Leider Falsch
+		
+	Fürst Meternich: Das waren alle Fragen [wait=1] du hast {{massages_true}} von {{Massages_All}} Richtig beantwortet.
 else:
 	Fürst Meternich: Du hast noch nicht alle Informationen gefunden 
 	Fürst Meternich: Soll ich dich trotzdem Abfragen?
 	- Ja
-		Fürst Meternich: Über welches Thema soll ich dich Abfragen?
-		- Wiener Kongres
+		Fürst Meternich: Ich frage dich nun ab
+		Fürst Meternich: Welche Rolle spielte der Wiener Kongress bei der Neugestaltung Europas nach Napoleons Niederlage?
+		- Er stellte die monarchische Ordnung wieder her und schuf ein Gleichgewicht der Mächte.
+			Fürst Meternich: Richtig 
+			set massages_true += 1
+		- Er führte zur Auflösung aller Monarchien und zur Einführung von Demokratien in Europa.
+			Fürst Meternich: Falsch
 	
-		- Hambacher Fest
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Inwiefern beeinflusste Fürst von Metternichs Führungsstil die Ergebnisse des Wiener Kongresses?
+		- Er förderte die Einführung demokratischer Verfassungen in ganz Europa.
+			Fürst Meternich: Leider Falsch
+		- Er setzte sich für die Restauration der Monarchien und gegen revolutionäre Bewegungen ein.
+			Fürst Meternich: Richtig
+			set massages_true += 1
+	
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Warum wurden demokratische und nationale Bestrebungen als Bedrohung für die europäische Stabilität angesehen?
+		- Sie wurden als harmlose Ideen betrachtet, die keine Auswirkungen auf Europa hatten.
+			Fürst Meternich: Leider Falsch
+		- Sie hätten das monarchische System gefährdet und zu Unruhen geführt.
+			Fürst Meternich: Richtig
+			set massages_true += 1
+			
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Welche langfristigen Auswirkungen hatte die Neuordnung der europäischen Grenzen auf die politischen Verhältnisse?
+		- Sie führte dazu, dass alle europäischen Länder friedlich vereint wurden.
+			Fürst Meternich: Leider Falsch
+		- Sie sorgte für ein Machtgleichgewicht, aber auch für Spannungen und spätere Konflikte.
+			Fürst Meternich: Richtig
+			set massages_true += 1
+		
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Warum war der Deutsche Bund kein einheitlicher Staat, und welche Herausforderungen ergaben sich daraus?
+		- Er war ein loser Zusammenschluss ohne zentrale Regierung, was Entscheidungen erschwerte.
+			Fürst Meternich: Richtig
+			set messages_true += 1
+		- Er war eine starke Zentralmacht mit einem einheitlichen Regierungssystem.
+			Fürst Meternich: Leider Falsch
+	
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Wie versuchte die Heilige Allianz, revolutionäre Bewegungen zu unterdrücken, und mit welchem Erfolg?
+		-  Sie unterstützte Monarchien militärisch und politisch, konnte Revolutionen aber nicht dauerhaft verhindern.
+			Fürst Meternich: Richtig
+			set messages_true += 1
+		- Sie förderte aktiv revolutionäre Bewegungen in Europa.
+			Fürst Meternich: Leider Falsch
+				
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Inwiefern trugen die Beschlüsse des Wiener Kongresses indirekt zu den Revolutionen von 1848 bei?
+		- Die Unterdrückung liberaler und nationaler Bewegungen führte zu wachsender Unzufriedenheit. 
+			Fürst Meternich: Richtig
+			set messages_true += 1
+		- Der Wiener Kongress gewährte allen Bürgern demokratische Rechte, wodurch es keine Aufstände gab.
+			Fürst Meternich: Leider Falsch
+		
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Wie beeinflusste meine Politik der Restauration die Entwicklung Europas bis zur Revolution von 1848?
+		-  Meine konservative Politik unterdrückte Reformen, was zu wachsender Unzufriedenheit führte.
+			Fürst Meternich: Richtig
+			set messages_true += 1
+		- Ich setzte mich für demokratische Reformen ein und unterstützte revolutionäre Bewegungen.
+			Fürst Meternich: Leider Falsch
+			
+		Fürst Meternich: Nächste Frage
+		Fürst Meternich: Inwiefern legten die Reformen von Freiherr vom Stein den Grundstein für die spätere Entwicklung eines deutschen Nationalstaats?
+		-  Seine Reformen stärkten Preußen wirtschaftlich und politisch, was spätere Einheitsbestrebungen erleichterte.
+			Fürst Meternich: Richtig
+			set messages_true += 1
+		- Seine Reformen führten zur sofortigen Gründung des Deutschen Kaiserreichs im Jahr 1815.
+			Fürst Meternich: Leider Falsch
+				
+		Fürst Meternich: Das waren alle Fragen [wait=1] du hast {{massages_true}} von {{Massages_All}} Richtig beantwortet.	
 	- Nein
 		=> END
 	
@@ -63,77 +202,132 @@ else:
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Fürst von Metternich (1773 bis 1859): Österreichischer Diplomat und Staatsmann
+		System: Wiener Kongress (1814 bis 1815): Leitete als österreichischer Außenminister und später Kanzler die Verhandlungen
+		
 	- Nein 
 		System: Deine Entscheidung
 => END
 
-~ info2
-if info1_read:
+~ infoHaus1
+if info2_read:
 	System: Du hast diese Information bereits gelesen
 else:
 	System: Du hast eine Information gefunden!
-	set info1_read = true
+	set info2_read = true
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Nach der Niederlage Napoleons war Europa politisch instabil, 
+		System: und die Herrscher fürchteten neue Kriege sowie revolutionäre Bewegungen. 
+		system: Um eine dauerhafte Ordnung zu schaffen, trafen sich vom 18. September 1814 bis zum 9. Juni 1815 führende Staatsmänner und Monarchen Europas in Wien zum Wiener Kongress.
 	- Nein 
 		System: Deine Entscheidung
 => END
 
-~ info3
-if info1_read:
+~ infoHaus2
+if info3_read:
 	System: Du hast diese Information bereits gelesen
 else:
 	System: Du hast eine Information gefunden!
-	set info1_read = true
+	set info3_read = true
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Wustest du das der Wiener Kongress acht Monate dauerte und von Fürst Metternich geleitet wurde?
+		System: Vertreter aus fast allen europäischen Ländern nahmen daran teil, um über eine Neuordnung des Kontinents zu verhandeln. 
+		System: Ziel war es, die alten monarchischen Strukturen wiederherzustellen und ein stabiles Gleichgewicht zwischen den Großmächten zu schaffen.
 	- Nein 
 		System: Deine Entscheidung
 => END
 
-~ info4
-if info1_read:
+~ infoHaus3
+if info4_read:
 	System: Du hast diese Information bereits gelesen
 else:
 	System: Du hast eine Information gefunden!
-	set info1_read = true
+	set info4_read = true
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Ein zentrales Ziel war die Sicherung von Frieden und Stabilität, indem verhindert wurde, dass eine einzelne Nation zu mächtig wird.
+		System: Zudem sollte die Restauration erfolgen, also die Rückkehr zur politischen Ordnung vor der Französischen Revolution von 1789.
+		
 	- Nein 
 		System: Deine Entscheidung
 => END
 
-~ info5
-if info1_read:
+~ infoHaus4
+if info5_read:
 	System: Du hast diese Information bereits gelesen
 else:
 	System: Du hast eine Information gefunden!
-	set info1_read = true
+	set info5_read = true
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Um das Machtgleichgewicht in Europa zu wahren, wurden die Grenzen vieler Länder neu gezogen. 
+		System: Frankreich wurde auf seine Grenzen von 1792 zurückgesetzt, und zahlreiche kleinere Staaten wurden neu geordnet.
 	- Nein 
 		System: Deine Entscheidung
 => END
 
-~ info6
-if info1_read:
+~ infoHaus5
+if info6_read:
 	System: Du hast diese Information bereits gelesen
 else:
 	System: Du hast eine Information gefunden!
-	set info1_read = true
+	set info6_read = true
 	System:  Willst du sie sehen
 	- Ja
 		set counter_Massages_Read += 1
-		System: Kontext
+		System: Der von Napoleon geschaffene Rheinbund wurde aufgelöst und durch den Deutschen Bund ersetzt.
+		System: Dieser bestand aus 35 Fürstentümern und vier freien Städten, war jedoch kein einheitlicher Staat, sondern ein lockerer Zusammenschluss mit einem Bundestag in Frankfurt am Main. 
+		System: Er hatte wenig Entscheidungsgewalt, diente aber als Plattform für diplomatische Verhandlungen.
+	- Nein 
+		System: Deine Entscheidung
+=> END
+
+
+~ infoHaus6
+if info7_read:
+	System: Du hast diese Information bereits gelesen
+else:
+	System: Du hast eine Information gefunden!
+	set info7_read = true
+	System:  Willst du sie sehen
+	- Ja
+		set counter_Massages_Read += 1
+		System: Zur Sicherung der monarchischen Ordnung gründeten Russland, Österreich und Preußen die Heilige Allianz. Dieses Bündnis hatte das Ziel, revolutionäre Bewegungen in Europa zu bekämpfen und jegliche liberalen sowie nationalistischen Bestrebungen zu unterdrücken.
+	- Nein 
+		System: Deine Entscheidung
+=> END
+
+~ infoHaus7
+if info8_read:
+	System: Du hast diese Information bereits gelesen
+else:
+	System: Du hast eine Information gefunden!
+	set info8_read = true
+	System:  Willst du sie sehen
+	- Ja
+		set counter_Massages_Read += 1
+		System: Zur Sicherung der monarchischen Ordnung gründeten Russland, Österreich und Preußen die Heilige Allianz. Dieses Bündnis hatte das Ziel, revolutionäre Bewegungen in Europa zu bekämpfen und jegliche liberalen sowie nationalistischen Bestrebungen zu unterdrücken.
+	- Nein 
+		System: Deine Entscheidung
+=> END
+
+~ info9
+if info9_read:
+	System: Du hast diese Information bereits gelesen
+else:
+	System: Du hast eine Information gefunden!
+	set info9_read = true
+	System:  Willst du sie sehen
+	- Ja
+		set counter_Massages_Read += 1
+		System: Freiherr vom Stein (1757 bis 1831): Preußischer Staatsmann und Reformer
+		System: Abschaffung der Leibeigenschaft: Bauern erhielten mehr Rechte und wirtschaftliche Freiheit
 	- Nein 
 		System: Deine Entscheidung
 => END

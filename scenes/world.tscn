@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://rq2ll51226f4"]
+[gd_scene load_steps=28 format=3 uid="uid://rq2ll51226f4"]
 
 [ext_resource type="PackedScene" uid="uid://c56xjw6wa7m8t" path="res://scenes/Main.tscn" id="1_cbifo"]
 [ext_resource type="Script" path="res://script/world.gd" id="1_lv20b"]
@@ -419,6 +419,9 @@ sources/0 = SubResource("TileSetAtlasSource_4umo6")
 sources/1 = SubResource("TileSetAtlasSource_lapqd")
 sources/6 = SubResource("TileSetAtlasSource_ulrsa")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_wmw4o"]
+radius = 30.0832
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qq4f7"]
 size = Vector2(72, 26)
 
@@ -426,7 +429,7 @@ size = Vector2(72, 26)
 radius = 22.0227
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xtrud"]
-radius = 34.0147
+radius = 22.0907
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mye4k"]
 size = Vector2(68, 16)
@@ -469,6 +472,15 @@ layer_1/tile_data = PackedInt32Array(0, 196608, 1, 65536, 196608, 1, 131072, 196
 layer_2/name = "ysort"
 layer_2/tile_data = PackedInt32Array(1179653, 196609, 6, 1245189, 196609, 5, 1376319, 393217, 5, 1572927, 393217, 5, 1769535, 393217, 5, 1376320, 393217, 5, 1572928, 393217, 5, 1769536, 393217, 5, 1376322, 393217, 5, 1572930, 393217, 5, 1769538, 393217, 5, 1376323, 393217, 5, 1572931, 393217, 5, 1769539, 393217, 5, 1376325, 393217, 5, 1572933, 393217, 5, 1769541, 393217, 5, 1376326, 393217, 5, 1572934, 393217, 5, 1769542, 393217, 5, 1376328, 393217, 5, 1572936, 393217, 5, 1769544, 393217, 5, 1376329, 393217, 5, 1572937, 393217, 5, 1769545, 393217, 5, 1376331, 393217, 5, 1572939, 393217, 5, 1769547, 393217, 5, 1376332, 393217, 5, 1572940, 393217, 5, 1769548, 393217, 5, 262149, 655361, 6, 1114117, 196609, 5, 2097160, 327681, 7, 1310783, 262145, 5, 1507391, 262145, 5, 1703999, 262145, 5, 1310784, 327681, 5, 1507392, 262145, 5, 1704000, 327681, 5, 1310786, 262145, 5, 1507394, 262145, 5, 1704002, 262145, 5, 1310787, 327681, 5, 1507395, 327681, 5, 1704003, 327681, 5, 2097219, 327681, 7, 1310789, 262145, 5, 1507397, 262145, 5, 1704005, 262145, 5, 1310790, 327681, 5, 1507398, 327681, 5, 1704006, 327681, 5, 1310792, 262145, 5, 1507400, 262145, 5, 1704008, 262145, 5, 1310793, 327681, 5, 1507401, 327681, 5, 1704009, 327681, 5, 1310795, 262145, 5, 1507403, 262145, 5, 1704011, 262145, 5, 1310796, 327681, 5, 1507404, 327681, 5, 1704012, 327681, 5, 262221, 655361, 6, 2293779, 196609, 5, 2359315, 655361, 6, 2555923, 196609, 5, 458771, 196609, 5, 524307, 327681, 7, 786451, 196609, 5, 1376285, 196609, 5, 655390, 655361, 6, 720926, 655361, 6, 655411, 655361, 6, 720947, 655361, 6)
 
+[node name="Actionablesinfo9" parent="WorldTexture" instance=ExtResource("7_e7vkd")]
+position = Vector2(1205, 381)
+dialogue_resurce = ExtResource("8_2h6px")
+dialogue_start = "info9"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldTexture/Actionablesinfo9"]
+position = Vector2(10, 4)
+shape = SubResource("CircleShape2D_wmw4o")
+
 [node name="ActionablesGK" parent="WorldTexture" instance=ExtResource("7_e7vkd")]
 position = Vector2(656, 217)
 dialogue_resurce = ExtResource("8_2h6px")
@@ -492,14 +504,14 @@ dialogue_resurce = ExtResource("8_2h6px")
 dialogue_start = "info1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldTexture/ActionablesInfo1"]
-position = Vector2(0, 7)
+position = Vector2(552, 48)
 shape = SubResource("CircleShape2D_xtrud")
 
 [node name="Player" parent="." instance=ExtResource("1_cbifo")]
 top_level = true
 z_index = 15
 y_sort_enabled = false
-position = Vector2(656, 325)
+position = Vector2(656, 139)
 collision_mask = 5
 
 [node name="follow_cam" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap", "follow_node")]
@@ -620,10 +632,10 @@ z_index = 2
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 438.0
-offset_top = 339.0
-offset_right = 574.0
-offset_bottom = 367.0
+offset_left = 995.0
+offset_top = 373.0
+offset_right = 1131.0
+offset_bottom = 401.0
 grow_horizontal = 2
 scale = Vector2(0.5, 0.5)
 theme_override_fonts/font = ExtResource("6_qkx3j")
@@ -631,5 +643,18 @@ text = "[E] to interact"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="body_entered" from="WorldTexture/ActionablesInfo1" to="." method="_on_actionables_info_1_body_entered"]
-[connection signal="body_exited" from="WorldTexture/ActionablesInfo1" to="." method="_on_actionables_info_1_body_exited"]
+[node name="Label2" type="Label" parent="."]
+z_index = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 1184.0
+offset_top = 373.0
+offset_right = 1320.0
+offset_bottom = 401.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("6_qkx3j")
+text = "[E] to interact"
+horizontal_alignment = 1
+vertical_alignment = 1
